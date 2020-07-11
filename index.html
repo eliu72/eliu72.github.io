@@ -1,0 +1,515 @@
+<html lang="en">
+
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Css -->
+  <link rel="stylesheet" type="text/css"  href="elaineliu.css">
+
+  <!-- Aos animations -->
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Title -->
+  <title>Elaine Liu</title>  
+  <link rel = "icon" href =  "assets/icon.ico" type = "image/x-icon"> 
+
+  <!-- reference your copy Font Awesome here (from our CDN or by hosting yourself) -->
+  <script src="https://kit.fontawesome.com/db7dd3a66d.js" crossorigin="anonymous"></script>
+
+  <!-- dropdown menu hover script 
+  <script>
+    $(document).ready(function(){
+        $(".dropdown, .btn-group").hover(function(){
+            var dropdownMenu = $(this).children(".dropdown-menu");
+            if(dropdownMenu.is(":visible")){
+                dropdownMenu.parent().toggleClass("open");
+            }
+        });
+    });		
+    </script>
+    <style>
+    .bs-example{
+        margin: 20px;
+    }
+    @media screen and (min-width: 768px) {
+      .dropdown:hover .dropdown-menu, .btn-group:hover .dropdown-menu{
+            display: block;
+        }
+        .dropdown-menu{
+            margin-top: 0;
+        }
+        .dropdown-toggle{
+            margin-bottom: 2px;
+        }
+        .navbar .dropdown-toggle, .nav-tabs .dropdown-toggle{
+            margin-bottom: 0;
+        }
+    }-->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163783495-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-163783495-1');
+    </script>
+
+</head>
+
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-light navbar-expand-md bg-inverse fixed-top scrolling-navbar">
+
+            <div class = "container">
+
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <a href="index.html" class="navbar-brand"><h2>Elaine Liu</h2></a>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="navbar-toggler-icon"></i>
+                </button>  
+
+                <!-- collapse navbar -->
+                <div class="navbar-collapse collapse" id="navbarCollapse">
+                    <ul style="justify-content: flex-end; padding-right: 50px; padding-bottom: 5px; padding-top: 5px;" class="navbar-nav mr-auto w-100 clearfix">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about-me">About Me</a>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experience" role="button" aria-haspopup="true" aria-expanded="false">
+                                Experience
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#projects" role="button" aria-haspopup="true" aria-expanded="false">
+                                Projects
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="../aisle-vision.html">Aisle Vision</a>
+                                <a class="dropdown-item" href="../cpr-alert.html">CPR Alert</a>
+                                <a class="dropdown-item" href="../save-spend.html">save-spend</a>
+                                <a class="dropdown-item" href="../parrot.html">parrot.</a>
+                                <a class="dropdown-item" href="../suit-python.html">SUIT Toolbox</a>
+                            </div>  
+                        </li>
+                    
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- nav-bar end -->
+    </header>
+
+
+    <!-- about-me start-->
+    <section id="about-me">
+        <div class="container" >
+            <div class="row" style="padding-top: 100px; padding-bottom: 70px;">
+                <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12 image-me module" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="assets/image-me-grey.jpg" alt="">  
+                </div>
+
+                <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 module" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="row">
+                        <h2 style="font-family: Poppins; font-weight: 700; padding-top: 10px; padding-bottom: 10px;">Elaine Liu</h2>
+                    </div>
+                    <div class="row">
+                        <h6 class="greyscale" style="color: #616161; font-weight: 700;">Developer &#128187 Biologist &#129515 Student &#128218</h6>
+                        <p>
+                            Hello, I'm Elaine! I'm currently studying Computer Science and Genetics at Western Univerity. 
+                            I love to learn new skills and am always looking for opportunities to put them to use! 
+                            I'm especially interested in the growing field of bioinformatics as well as the intersection between healthcare and tech.
+                            One day, I hope to work at the forefront of tech and biology. 
+                        </p>
+                    </div>
+
+                    
+                    <div class="text-center text-md-left">
+                        <h5 style="font-family: Poppins; font-weight: 700; padding-top: 10px" class="text-center text-md-left">Contact Me!</h5>
+                    </div>
+
+                    <div class="row social-icons text-center text-md-left">
+                        <div class="col-md-6 ">
+                            <span>
+                                <a href="mailto:elaineliu7g@gmail.com"><i class="fas fa-envelope"></i></a> 
+                                elaineliu7g@gmail.com
+                            </span>
+                            <br>
+                            <span>
+                                <a href="tel:647-761-8125"><i class="fas fa-phone-alt"></i></a> 
+                                647-761-8125                       
+                            </span>
+                        </div>
+                        <div class="col-md-6">
+                            <span>
+                                <a href="https://www.linkedin.com/in/eliu72/"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://www.linkedin.com/in/eliu72/" style="color:black"> linkedin.com/in/eliu72</a>
+                            </span>
+                            <br>
+                            <span>
+                                <a href="https://github.com/eliu72" ><i class="fab fa-github"></i></a>         
+                                <a href="https://github.com/eliu72" style="color:black;"> github.com/eliu72</a>                  
+                            </span>
+                        </div>                                   
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about-me end-->
+
+    <!-- Experience section start-->
+    <section id="experience">
+        <div class="container" style="padding-left: 40px; padding-right: 40px">
+            <h2 style="font-family: Poppins; font-weight: 700; text-align: center;">Experience</h2>
+            <br>
+            <div class="row">
+                <div class="col-1" data-aos="fade-up" data-aos-duration="700" style="align-items: flex-end;">
+                    <img src="../assets/western.gif" class="exp-icon" alt="">
+                </div>
+                <div class="col-11">
+                    <div class="row"  data-aos="fade-up" data-aos-duration="1000">
+                        <h3 class="exp-text">Software Developer Intern</h3>
+                    </div>
+                    <div class="row"  data-aos="fade-up" data-aos-duration="1000">
+                        <h6 class="exp-text-sub">Diedrichsen Lab | May 2020 - Aug 2020</h6>
+                    </div>
+                    <div class="row"  data-aos="fade-up" data-aos-duration="1300">
+                        <p class="exp-text-p">
+                            • Transpiled the MATLAB SUIT toolbox into Python for cerebellum visualization<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-1" data-aos="fade-up" data-aos-duration="700" style="align-items: flex-end;">
+                        <img src="../assets/sh4.png" class="exp-icon" alt="">
+                </div>
+                <div class="col-11">
+                    <div class="row"  data-aos="fade-up" data-aos-duration="1000">
+                        <h3 class="exp-text">Chair of SheHacks</h3>
+                    </div>
+                    <div class="row"  data-aos="fade-up" data-aos-duration="1000">
+                        <h6 class="exp-text-sub">Women in Tech Society | 2020 - Present (Director of SheHacks, 2019-2020)</h6>
+                    </div>
+                    <div class="row"  data-aos="fade-up" data-aos-duration="1300">
+                        <p class="exp-text-p">
+                            • Organized Canada's largest all-female hackathon<br>
+                            • Expanded hackathon from 12 hours to 24 hours<br>
+                            • Spearheaded 'Lights Out' sustainability mini-hackathon<br>
+                            Learn more about the hackathon at <a href="shehacks.ca">shehacks.ca</a>!<br>
+                        </p>
+                    </div>
+                </div>    
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-1" data-aos="fade-up" data-aos-duration="700" style="align-items: flex-end;">
+                    <img src="../assets/western.gif" class="exp-icon" alt="">
+                </div>
+                <div class="col-11">
+                    <div class="row"  data-aos="fade-up" data-aos-duration="1000">
+                        <h3 class="exp-text">Student Coordinator</h3>
+                    </div>
+                    <div class="row"  data-aos="fade-up" data-aos-duration="1000">
+                        <h6 class="exp-text-sub">Western Co-Curricular Record | Sep 2019 - Present</h6>
+                    </div>
+                    <div class="row"  data-aos="fade-up" data-aos-duration="1300">
+                        <p class="exp-text-p">
+                            • Maintained a database of 500+ co-curricular community activities<br>
+                            • Connected with students, staff, and faculty on campus to update and track activities<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-1" data-aos="fade-up" data-aos-duration="700" style="align-items: flex-end;">
+                    <img src="../assets/lawson.jpg" class="exp-icon" alt="">
+                </div>
+                <div class="col-11">
+                    <div class="row"  data-aos="fade-up" data-aos-duration="1000">
+                        <h3 class="exp-text">Research Assistant</h3>
+                    </div>
+                    <div class="row"  data-aos="fade-up" data-aos-duration="1000">
+                        <h6 class="exp-text-sub">London Regional Cancer Program | May 2019 - Aug 2019</h6>
+                    </div>
+                    <div class="row"  data-aos="fade-up" data-aos-duration="1300">
+                        <p class="exp-text-p">
+                            • Studied the role of MRT drug in destroying ovarian cancer tumours<br>
+                            • Streamlined an ImageJ Macro that uses AI to detect cell irregularities<br>
+                            • Co-Author of <b>Inhibiting ULK1 kinase decreases autophagy and cell viability in high-grade serous ovarian cancer spheroids</b> View at NCBI: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7269771/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7269771/</a> <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="padding-top: 30px;color: white;">
+                <a href="https://drive.google.com/file/d/1MhIJZ95Be7vsymDvclYSzq0mXBoYy99O/view?usp=sharingO" target="_blank"><h3 style="color: white; font-style: italic; font-family: Poppins;"><u>Resume</u></h3></a>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- Skills section start-->
+    <section id="skills">
+        <div class="container">
+            <h2 style="font-family: Poppins; font-weight: 700; text-align: center;">Skills</h2>
+            <div class="row" style="padding-top: 40px;">
+                <div class="col-lg-4 col-xs-12">
+                    <p class="skills-head">
+                        Programming Languages
+                    </p>
+
+                    <div class="row">
+                        <div class="col skills-text">
+                            <p class="skills-p">
+                                Java<br>
+                                Python<br>
+                                HTML/CSS<br>
+                                Bootstrap<br>
+                                JavaScript<br>
+                                React.js<br>
+                                R<br>
+                                MATLAB<br>
+                                Matplotlib<br>
+                                Numpy<br>
+                                Nibabel<br>
+                                PyOpenGL<br>
+                            </p>
+                        </div>
+        
+                        <div class="col">
+                            <p class="skills-p">
+                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
+                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
+                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
+                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
+                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
+                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
+                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
+                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
+                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
+                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
+                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
+                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-xs-12">
+                    <p class="skills-head">
+                        Technologies
+                    </p>
+
+                    <div class="row">
+                        <div class="col skills-text">
+                            <p class="skills-p">
+                                Git<br>
+                                Bash<br>
+                                Photoshop<br>
+                                Figma<br>
+                                ImageJ<br>
+                                Android Studio<br>
+                            </p>
+                        </div>
+        
+                        <div class="col">
+                            <p class="skills-p">
+                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
+                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
+                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
+                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
+                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>                        
+                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-xs-12">
+                    <p class="skills-head">
+                        Lab Techniques
+                    </p>
+
+                    <div class="row">
+                        <div class="col skills-text">
+                            <p class="skills-p">
+                                PCR<br>
+                                Western Blot<br>
+                                Cell Culture<br>
+                                DNA Isolation<br>
+                                Protein Isolation<br>
+                            </p>
+                        </div>
+        
+                        <div class="col">
+                            <p class="skills-p">
+                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
+                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
+                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
+                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
+                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--
+                <div class="col-md-6 col-xs-12">
+                    <p class="skills-head">
+                        Other Skills
+                    </p>
+
+                    <div class="row">
+                        <div class="col skills-text">
+                            <p class="skills-p">
+                                English<br>
+                                French<br>
+                                Mandarin<br>
+                                Cantonese<br>
+                                Event Planning<br>
+                            </p>
+                        </div>
+        
+                        <div class="col">
+                            <p class="skills-p">
+                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
+                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
+                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
+                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
+                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
+                            </p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>  
+    </section>
+    <!-- skills section end -->
+
+    <!-- projects start -->
+    <section id="projects">
+        <div class="container">
+            <h2 style="font-family: Poppins; font-weight: 700; text-align: center; color: white; padding-bottom: 10px;">Projects</h2>
+            <div class="row">
+                <div class="col-md-4" style="padding-top: 10px; padding-bottom: 10px;" data-aos="fade-up" data-aos-duration="700">
+                    <div class="proj-container" style="background-color: black; padding: 0;">
+                        <a href="../aisle-vision.html">
+                            <img src="assets/aisle-vision.jpg" alt="" class="image">   
+                            <div class="middle">
+                                <h3 class="text">Aisle Vision</h3>
+                                <h6 class="text">Hack Western, 2019</h6>
+                            </div>
+                        </a>    
+                    </div>
+                </div>
+                <div class="col-md-4" style="padding-top: 10px; padding-bottom: 10px;" data-aos="fade-up" data-aos-duration="900">
+                    <div class="proj-container" style="background-color: black; padding: 0;">
+                        <a href="../cpr-alert.html">
+                            <img src="assets/cpr-alert.png" alt="" class="image2">   
+                            <div class="middle">
+                                <h3 class="text">CPR Alert</h3>
+                                <h6 class="text">StarterHacks, 2020</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4" style="padding-top: 10px; padding-bottom: 10px;" data-aos="fade-up" data-aos-duration="1200">
+                    <div class="proj-container" style="background-color: black; padding: 0;">
+                        <a href="../save-spend.html">
+                            <img src="assets/save-spend.png" alt="" class="image3">   
+                            <div class="middle">
+                                <h3 class="text">save-spend</h3>
+                                <h6 class="text">ElleHacks, 2020</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- overlay script -->
+                <script>
+                    function on() {
+                        document.getElementById("overlay").style.display = "block";
+                    }
+
+                    function off() {
+                        document.getElementById("overlay").style.display = "none";
+                    }
+                </script>
+
+            </div>
+            <div class = "row">
+                <div class="col-md-6">
+                    <div class="proj-container" style = "background-color: black; padding: 0">
+                        <a href="../parrot.html">
+                            <img src="assets/parrot.png" alt="" class="image3">
+                            <div class="middle">
+                                <h3 class="text">parrot.</h3>
+                                <h6 class="text">RUHacks, 2020</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="proj-container" style = "background-color: black; padding: 0">
+                        <a href="../suit-python.html">
+                            <img src="assets/suit-python.jpg" alt="" class="image3">
+                            <div class="middle">
+                                <h3 class="text">SUIT Toolbox (Python)</h3>
+                                <h6 class="text">Diedrichsen Lab, 2020</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- projects end -->
+
+    <!-- footer -->
+    <section id="footer">
+
+        <footer id="footer" class="footer-area footer-text">
+            <div class="container" data-aos="fade-up" data-aos-duration="1200">
+                <h4 style="font-weight: 600;">Contact Me!</h4>
+                <span>
+                    <a href="mailto:elaineliu7g@gmail.com"><i class="fas fa-envelope"></i></a> &nbsp
+                    <a href="tel:647-761-8125"><i class="fas fa-phone-alt"></i></a> &nbsp
+                    <a href="https://www.linkedin.com/in/eliu72/"><i class="fab fa-linkedin-in"></i></a> &nbsp
+                    <a href="https://github.com/eliu72" ><i class="fab fa-github"></i></a>
+                </span>
+            </div>
+        </footer>
+    </section>
+
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script> AOS.init(); </script>
+    
+</body>
+
+
+</html>
