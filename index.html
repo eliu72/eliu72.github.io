@@ -1,112 +1,84 @@
 <html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      
+        <!-- Css -->
+        <link rel="stylesheet" type="text/css"  href="elaineliu.css">
+      
+        <!-- Aos animations -->
+        <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+      
+        <!-- reference your copy Font Awesome here (from our CDN or by hosting yourself) -->
+        <script src="https://kit.fontawesome.com/db7dd3a66d.js" crossorigin="anonymous"></script>
+        
+        <!-- Title -->
+        <title>Elaine Liu</title>  
+        <link rel = "icon" href =  "../assets/icon.ico" type = "image/x-icon"> 
+      
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163783495-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'UA-163783495-1');
+        </script>
 
-
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-  <!-- Css -->
-  <link rel="stylesheet" type="text/css"  href="elaineliu.css">
-
-  <!-- Aos animations -->
-  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-
-  <!-- Title -->
-  <title>Elaine Liu</title>  
-  <link rel = "icon" href =  "assets/icon.ico" type = "image/x-icon"> 
-
-  <!-- reference your copy Font Awesome here (from our CDN or by hosting yourself) -->
-  <script src="https://kit.fontawesome.com/db7dd3a66d.js" crossorigin="anonymous"></script>
-
-  <!-- dropdown menu hover script 
-  <script>
-    $(document).ready(function(){
-        $(".dropdown, .btn-group").hover(function(){
-            var dropdownMenu = $(this).children(".dropdown-menu");
-            if(dropdownMenu.is(":visible")){
-                dropdownMenu.parent().toggleClass("open");
-            }
-        });
-    });		
-    </script>
-    <style>
-    .bs-example{
-        margin: 20px;
-    }
-    @media screen and (min-width: 768px) {
-      .dropdown:hover .dropdown-menu, .btn-group:hover .dropdown-menu{
-            display: block;
-        }
-        .dropdown-menu{
-            margin-top: 0;
-        }
-        .dropdown-toggle{
-            margin-bottom: 2px;
-        }
-        .navbar .dropdown-toggle, .nav-tabs .dropdown-toggle{
-            margin-bottom: 0;
-        }
-    }-->
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163783495-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-163783495-1');
-    </script>
-
-</head>
-
+    </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
     <header>
         <!-- Navbar -->
-        <nav class="navbar navbar-light navbar-expand-md bg-inverse fixed-top scrolling-navbar">
-
+        <nav class="navbar navbar-dark navbar-expand-md navbar-inverse fixed-top scrolling-navbar">
+    
             <div class = "container">
-
+    
                 <!-- Brand and toggle get grouped for better mobile display -->
-                <a href="index.html" class="navbar-brand"><h2>Elaine Liu</h2></a>
+                <a href="#hero" class="navbar-brand"><h2>Elaine Liu</h2></a>
                 <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="navbar-toggler-icon"></i>
                 </button>  
-
+    
                 <!-- collapse navbar -->
                 <div class="navbar-collapse collapse" id="navbarCollapse">
-                    <ul style="justify-content: flex-end; padding-right: 50px; padding-bottom: 5px; padding-top: 5px;" class="navbar-nav mr-auto w-100 clearfix">
+                    <ul class="navbar-nav mr-auto w-100 clearfix">
                         <li class="nav-item">
                             <a class="nav-link" href="#about-me">About Me</a>
                         </li>
                     
                         <li class="nav-item">
-                            <a class="nav-link" href="#experience" role="button" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link" href="#resume" role="button" aria-haspopup="true" aria-expanded="false">
                                 Experience
                             </a>
                         </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skills">Skills</a>
-                        </li>
-
+    
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#projects" role="button" aria-haspopup="true" aria-expanded="false">
                                 Projects
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="../aisle-vision.html">Aisle Vision</a>
-                                <a class="dropdown-item" href="../cpr-alert.html">CPR Alert</a>
-                                <a class="dropdown-item" href="../save-spend.html">save-spend</a>
                                 <a class="dropdown-item" href="../parrot.html">parrot.</a>
-                                <a class="dropdown-item" href="../suit-python.html">SUIT Toolbox</a>
+                                <a class="dropdown-item" href="../save-spend.html">save-spend</a>
+                                <a class="dropdown-item" href="../cpr-alert.html">CPR Alert</a>
+                                <a class="dropdown-item" href="../aisle-vision.html">Aisle Vision</a>
                             </div>  
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer" role="button" aria-haspopup="true" aria-expanded="false">
+                                Contact
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="https://drive.google.com/file/d/1MhIJZ95Be7vsymDvclYSzq0mXBoYy99O/view?usp=sharingO" target="_blank"><button type="button" class="btn btn-light">Resume</button></a>
                         </li>
                     
                     </ul>
@@ -115,336 +87,365 @@
         </nav>
         <!-- nav-bar end -->
     </header>
-
-
-    <!-- about-me start-->
-    <section id="about-me">
-        <div class="container" >
-            <div class="row" style="padding-top: 100px; padding-bottom: 70px;">
-                <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12 image-me module" data-aos="fade-up" data-aos-duration="1000">
-                    <img src="assets/image-me-grey.jpg" alt="">  
-                </div>
-
-                <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 module" data-aos="fade-up" data-aos-duration="1500">
-                    <div class="row">
-                        <h2 style="font-family: Poppins; font-weight: 700; padding-top: 10px; padding-bottom: 10px;">Elaine Liu</h2>
-                    </div>
-                    <div class="row">
-                        <h6 class="greyscale" style="color: #616161; font-weight: 700;">Developer &#128187 Biologist &#129515 Student &#128218</h6>
-                        <p>
-                            Hello, I'm Elaine! I'm currently studying Computer Science and Genetics at Western Univerity. 
-                            I love to learn new skills and am always looking for opportunities to put them to use! 
-                            I'm especially interested in the growing field of bioinformatics as well as the intersection between healthcare and tech.
-                            One day, I hope to work at the forefront of tech and biology. 
-                        </p>
-                    </div>
-
-                    
-                    <div class="text-center text-md-left">
-                        <h5 style="font-family: Poppins; font-weight: 700; padding-top: 10px" class="text-center text-md-left">Contact Me!</h5>
-                    </div>
-
-                    <div class="row social-icons text-center text-md-left">
-                        <div class="col-md-6 ">
-                            <span>
-                                <a href="mailto:elaineliu7g@gmail.com"><i class="fas fa-envelope"></i></a> 
-                                elaineliu7g@gmail.com
-                            </span>
-                            <br>
-                            <span>
-                                <a href="tel:647-761-8125"><i class="fas fa-phone-alt"></i></a> 
-                                647-761-8125                       
-                            </span>
-                        </div>
-                        <div class="col-md-6">
-                            <span>
-                                <a href="https://www.linkedin.com/in/eliu72/"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="https://www.linkedin.com/in/eliu72/" style="color:black"> linkedin.com/in/eliu72</a>
-                            </span>
-                            <br>
-                            <span>
-                                <a href="https://github.com/eliu72" ><i class="fab fa-github"></i></a>         
-                                <a href="https://github.com/eliu72" style="color:black;"> github.com/eliu72</a>                  
-                            </span>
-                        </div>                                   
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- about-me end-->
-
-    <!-- Experience section start-->
-    <section id="experience">
-        <div class="container" style="padding-left: 40px; padding-right: 40px">
-            <h2 style="font-family: Poppins; font-weight: 700; text-align: center;">Experience</h2>
-            <br>
-            <div class="row">
-                <div class="col-1" data-aos="fade-up" data-aos-duration="700" style="align-items: flex-end;">
-                    <img src="../assets/western.gif" class="exp-icon" alt="">
-                </div>
-                <div class="col-11">
-                    <div class="row"  data-aos="fade-up" data-aos-duration="1000">
-                        <h3 class="exp-text">Software Developer Intern</h3>
-                    </div>
-                    <div class="row"  data-aos="fade-up" data-aos-duration="1000">
-                        <h6 class="exp-text-sub">Diedrichsen Lab | May 2020 - Aug 2020</h6>
-                    </div>
-                    <div class="row"  data-aos="fade-up" data-aos-duration="1300">
-                        <p class="exp-text-p">
-                            • Transpiled the MATLAB SUIT toolbox into Python for cerebellum visualization<br>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-1" data-aos="fade-up" data-aos-duration="700" style="align-items: flex-end;">
-                        <img src="../assets/sh4.png" class="exp-icon" alt="">
-                </div>
-                <div class="col-11">
-                    <div class="row"  data-aos="fade-up" data-aos-duration="1000">
-                        <h3 class="exp-text">Chair of SheHacks</h3>
-                    </div>
-                    <div class="row"  data-aos="fade-up" data-aos-duration="1000">
-                        <h6 class="exp-text-sub">Women in Tech Society | 2020 - Present (Director of SheHacks, 2019-2020)</h6>
-                    </div>
-                    <div class="row"  data-aos="fade-up" data-aos-duration="1300">
-                        <p class="exp-text-p">
-                            • Organized Canada's largest all-female hackathon<br>
-                            • Expanded hackathon from 12 hours to 24 hours<br>
-                            • Spearheaded 'Lights Out' sustainability mini-hackathon<br>
-                            Learn more about the hackathon at <a href="shehacks.ca">shehacks.ca</a>!<br>
-                        </p>
-                    </div>
-                </div>    
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-1" data-aos="fade-up" data-aos-duration="700" style="align-items: flex-end;">
-                    <img src="../assets/western.gif" class="exp-icon" alt="">
-                </div>
-                <div class="col-11">
-                    <div class="row"  data-aos="fade-up" data-aos-duration="1000">
-                        <h3 class="exp-text">Student Coordinator</h3>
-                    </div>
-                    <div class="row"  data-aos="fade-up" data-aos-duration="1000">
-                        <h6 class="exp-text-sub">Western Co-Curricular Record | Sep 2019 - Present</h6>
-                    </div>
-                    <div class="row"  data-aos="fade-up" data-aos-duration="1300">
-                        <p class="exp-text-p">
-                            • Maintained a database of 500+ co-curricular community activities<br>
-                            • Connected with students, staff, and faculty on campus to update and track activities<br>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-1" data-aos="fade-up" data-aos-duration="700" style="align-items: flex-end;">
-                    <img src="../assets/lawson.jpg" class="exp-icon" alt="">
-                </div>
-                <div class="col-11">
-                    <div class="row"  data-aos="fade-up" data-aos-duration="1000">
-                        <h3 class="exp-text">Research Assistant</h3>
-                    </div>
-                    <div class="row"  data-aos="fade-up" data-aos-duration="1000">
-                        <h6 class="exp-text-sub">London Regional Cancer Program | May 2019 - Aug 2019</h6>
-                    </div>
-                    <div class="row"  data-aos="fade-up" data-aos-duration="1300">
-                        <p class="exp-text-p">
-                            • Studied the role of MRT drug in destroying ovarian cancer tumours<br>
-                            • Streamlined an ImageJ Macro that uses AI to detect cell irregularities<br>
-                            • Co-Author of <b>Inhibiting ULK1 kinase decreases autophagy and cell viability in high-grade serous ovarian cancer spheroids</b> View at NCBI: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7269771/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7269771/</a> <br>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row" style="padding-top: 30px;color: white;">
-                <a href="https://drive.google.com/file/d/1MhIJZ95Be7vsymDvclYSzq0mXBoYy99O/view?usp=sharingO" target="_blank"><h3 style="color: white; font-style: italic; font-family: Poppins;"><u>Resume</u></h3></a>
-            </div>
-        </div>
-    </section>
     
-    
-    <!-- Skills section start-->
-    <section id="skills">
+    <!-- hero start-->
+    <section id="hero" style="padding-bottom: 10%">
         <div class="container">
-            <h2 style="font-family: Poppins; font-weight: 700; text-align: center;">Skills</h2>
-            <div class="row" style="padding-top: 40px;">
-                <div class="col-lg-4 col-xs-12">
-                    <p class="skills-head">
-                        Programming Languages
-                    </p>
-
-                    <div class="row">
-                        <div class="col skills-text">
-                            <p class="skills-p">
-                                Java<br>
-                                Python<br>
-                                HTML/CSS<br>
-                                Bootstrap<br>
-                                JavaScript<br>
-                                React.js<br>
-                                R<br>
-                                MATLAB<br>
-                                Matplotlib<br>
-                                Numpy<br>
-                                Nibabel<br>
-                                PyOpenGL<br>
-                            </p>
-                        </div>
-        
-                        <div class="col">
-                            <p class="skills-p">
-                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
-                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
-                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
-                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
-                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
-                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
-                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
-                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
-                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
-                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
-                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
-                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-xs-12">
-                    <p class="skills-head">
-                        Technologies
-                    </p>
-
-                    <div class="row">
-                        <div class="col skills-text">
-                            <p class="skills-p">
-                                Git<br>
-                                Bash<br>
-                                Photoshop<br>
-                                Figma<br>
-                                ImageJ<br>
-                                Android Studio<br>
-                            </p>
-                        </div>
-        
-                        <div class="col">
-                            <p class="skills-p">
-                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
-                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
-                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
-                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
-                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>                        
-                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-xs-12">
-                    <p class="skills-head">
-                        Lab Techniques
-                    </p>
-
-                    <div class="row">
-                        <div class="col skills-text">
-                            <p class="skills-p">
-                                PCR<br>
-                                Western Blot<br>
-                                Cell Culture<br>
-                                DNA Isolation<br>
-                                Protein Isolation<br>
-                            </p>
-                        </div>
-        
-                        <div class="col">
-                            <p class="skills-p">
-                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
-                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
-                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
-                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
-                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!--
-                <div class="col-md-6 col-xs-12">
-                    <p class="skills-head">
-                        Other Skills
-                    </p>
-
-                    <div class="row">
-                        <div class="col skills-text">
-                            <p class="skills-p">
-                                English<br>
-                                French<br>
-                                Mandarin<br>
-                                Cantonese<br>
-                                Event Planning<br>
-                            </p>
-                        </div>
-        
-                        <div class="col">
-                            <p class="skills-p">
-                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
-                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
-                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
-                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
-                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
-                            </p>
-                        </div>
-                    </div>
-                </div> -->
+            <div class="row">
+                <br><br><br><br><br>
             </div>
-        </div>  
+            <div class="row  main-container">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 image-me my-auto text-center" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="col-12">
+                        <img src="../assets/image-me.png" alt="">  
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 my-auto" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="col-12 hero-text" >
+                        <div class="row">
+                            <h6>Hello! My name is</h6>
+                        </div>
+                        <div class="row">
+                            <h1>Elaine Liu<span style="font-family: Roboto;">.</span></h1>
+                        </div>
+                        <div class="row">
+                            <h3>Building with passion.</h3>
+                        </div>
+                        <div class="row">
+                            <p>I'm a <span style="color:#3257A8; font-weight: bolder;">developer</span>, 
+                                <span style="color:#3257A8; font-weight: bolder;">scientist</span>, and 
+                                <span style="color:#3257A8; font-weight: bolder;">student</span> currently
+                                based in Toronto, Ontario. Let's get in touch!
+                            </p>
+                        </div>
+                        <div class="row">
+                            <a href="mailto:elaineliu7g@gmail.com"><button type="button" class="btn btn-dark"><i class="fas fa-paper-plane"></i></button></a>
+                            <a href="https://github.com/eliu72" ><button type="button" class="btn btn-dark"><i class="fa fa-github"></i></button></a>
+                            <a href="https://www.linkedin.com/in/eliu72/"><button type="button" class="btn btn-dark"><i class="fab fa-linkedin-in"></i></button></a>
+                            <a href="https://www.facebook.com/elaineliu22"><button type="button" class="btn btn-dark"><i class="fab fa-facebook-f"></i></button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <!-- skills section end -->
+    <!-- hero end-->
+
+    <!-- about-me section start -->
+    <section id="about-me" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-1"> </div>
+                <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12 container-2">
+                    <div class="row"><h1 class="section-header">Hello! <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                        width="48" height="48"
+                        viewBox="0 0 172 172"
+                        style=" fill:#000000;"><defs><linearGradient x1="100.81081" y1="132.37281" x2="100.81081" y2="146.48756" gradientUnits="userSpaceOnUse" id="color-1_IYwHBlTX6Blw_gr1"><stop offset="0" stop-color="#7493d6"></stop><stop offset="1" stop-color="#6e0fe8"></stop></linearGradient><linearGradient x1="84.65625" y1="21.55644" x2="84.65625" y2="161.56175" gradientUnits="userSpaceOnUse" id="color-2_IYwHBlTX6Blw_gr2"><stop offset="0" stop-color="#3257a8"></stop><stop offset="1" stop-color="#3c087e"></stop></linearGradient><linearGradient x1="43" y1="21.55644" x2="43" y2="161.56175" gradientUnits="userSpaceOnUse" id="color-3_IYwHBlTX6Blw_gr3"><stop offset="0" stop-color="#3257a8"></stop><stop offset="1" stop-color="#3c087e"></stop></linearGradient><linearGradient x1="34.9375" y1="21.55644" x2="34.9375" y2="161.56175" gradientUnits="userSpaceOnUse" id="color-4_IYwHBlTX6Blw_gr4"><stop offset="0" stop-color="#3257a8"></stop><stop offset="1" stop-color="#3c087e"></stop></linearGradient><linearGradient x1="95.40625" y1="21.55644" x2="95.40625" y2="161.56175" gradientUnits="userSpaceOnUse" id="color-5_IYwHBlTX6Blw_gr5"><stop offset="0" stop-color="#3257a8"></stop><stop offset="1" stop-color="#3c087e"></stop></linearGradient></defs><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M99.30313,146.92563l-5.70019,-5.70019c-1.0535,-1.0535 -1.04544,-2.75469 0,-3.80013l5.70019,-5.70019l9.503,9.503l-5.70019,5.70019c-1.05619,1.05081 -2.75738,1.04544 -3.80281,-0.00269z" fill="url(#color-1_IYwHBlTX6Blw_gr1)"></path><g><path d="M144.91269,101.31875l-5.70019,-5.70019c-1.75225,-1.75225 -4.10381,-2.48594 -6.39088,-2.29512l3.79206,-39.35037c0.33325,-3.42119 -0.68263,-6.75637 -2.881,-9.36863c-2.18225,-2.61225 -5.27019,-4.18713 -8.69138,-4.44781c-7.009,-0.53481 -13.27356,4.73537 -13.96963,11.75781l-1.14219,10.67475l-40.08137,-40.13512c-4.71388,-4.71388 -12.38937,-4.71388 -17.10325,0c-1.76031,1.76031 -2.31662,3.38625 -3.30294,6.19738l-0.49719,-0.49719c-4.71388,-4.71387 -12.38937,-4.71387 -17.10325,0c-4.71388,4.71387 -4.71387,12.38938 0,17.10325l0.49719,0.49719c-2.81381,0.98631 -4.43975,1.54263 -6.19737,3.30294c-4.71387,4.71388 -4.71387,12.38938 0,17.10325l3.90494,3.90494c-2.55312,1.247 -3.46687,1.35719 -4.85363,2.74662c-4.19519,4.19519 -4.19519,11.008 0,15.20319l45.60419,45.60688c4.5365,4.5365 10.8145,6.2565 16.69475,5.18956c-0.13975,2.236 0.61006,4.51231 2.30856,6.2135l5.70019,5.70019c3.139,3.139 8.26138,3.139 11.40306,0l38.00662,-38.00662c3.14169,-3.139 3.14169,-8.26137 0.00269,-11.40037zM74.59963,129.82238l-45.60956,-45.60687c-2.09356,-2.09356 -2.09356,-5.50937 0,-7.60025c2.09356,-2.09356 5.50937,-2.09356 7.60025,0l17.10325,17.10325l3.80013,-3.80013l-27.55225,-27.55762c-2.62031,-2.62031 -2.62031,-6.88 0,-9.503c2.62031,-2.62031 6.88,-2.62031 9.50031,0l27.55494,27.55494l3.80013,-3.80013l-35.15519,-35.15519c-2.62031,-2.62031 -2.62031,-6.88269 0,-9.503c2.62031,-2.62031 6.88,-2.62031 9.50031,0l35.15787,35.15519l3.80013,-3.80013l-27.55494,-27.55494c-2.62031,-2.62031 -2.62031,-6.88269 0,-9.503c2.62031,-2.62031 6.88269,-2.62031 9.503,0l40.07869,40.12169c1.47812,1.47813 3.62275,1.95919 5.59,1.2685c1.95919,-0.69875 3.3325,-2.41338 3.5475,-4.48275l1.15025,-10.69625c0.41656,-4.15756 4.09844,-7.25894 8.22644,-6.94719c1.95919,0.14781 3.72488,1.0535 4.97456,2.53969c1.26044,1.49963 1.84094,3.41581 1.64744,5.38844l-3.85925,39.96581c-0.172,1.86244 -1.00244,3.61469 -2.32469,4.93694l-31.476,31.476c-5.24063,5.24062 -13.76269,5.24062 -19.00331,0zM141.10987,108.919l-38.00662,38.00663c-1.04812,1.04812 -2.75469,1.04812 -3.80012,0l-5.70019,-5.70019c-1.04544,-1.04544 -1.04544,-2.75469 0,-3.80013l38.00663,-38.00662c1.04812,-1.04812 2.75469,-1.04812 3.80012,0l5.70019,5.70019c1.04813,1.04544 1.04813,2.75469 0,3.80013z" fill="url(#color-2_IYwHBlTX6Blw_gr2)"></path><path d="M33.03744,112.08756l16.125,16.125l3.80013,-3.80012l-16.125,-16.125z" fill="url(#color-3_IYwHBlTX6Blw_gr3)"></path><path d="M16.91244,112.08756l32.25,32.25l3.80013,-3.80012l-32.25,-32.25z" fill="url(#color-4_IYwHBlTX6Blw_gr4)"></path><path d="M106.71256,41.09994l-18.8125,-18.8125l-3.80013,3.80013l18.8125,18.8125z" fill="url(#color-5_IYwHBlTX6Blw_gr5)"></path></g></g></g></svg>
+                     </h1></div>
+                    <br>
+                    <div class="row" data-aos="fade-up" data-aos-duration="1200">
+                        <p>My name is Elaine and I’m currently studying Computer Science and Genetics at 
+                            Western University in London, Ontario. Although my background is originally in medical sciences, I 
+                            wanted to further explore the tech space and decided to major in CS!
+                        </p>
+                    </div>
+                    <div class="row" data-aos="fade-up" data-aos-duration="1200">
+                            <p class="open-sans-bold">What drew me towards tech were the immense possibilities in the industry and the chance for me to use my
+                                <span style="color: #3257A8">creativity </span> and 
+                                <span style="color: #3257A8">problem-solving skills</span>. 
+                            </p> 
+                    </div>
+                    <div class="row" data-aos="fade-up" data-aos-duration="1200">
+                        <p>As a budding developer and scientist, I'm super interested in the intersection between tech and biology. I am
+                            always looking for opportunities to build on my skill set! 
+                        </p>
+                    </div>
+                    <div class="row" data-aos="fade-up" data-aos-duration="1200">
+                        <p>Outside of school and work, I am truly a homebody and enjoy my time inside. 
+                            Some of my hobbies include cooking and baking, and bingeing the occasional TV series! 
+                            But at the same time, I love the outdoors and enjoy camping. </p>
+                        <p style="font-weight:700;">Feel free ask me about my experiences with winter camping!</p>
+                    </div>
+                </div> 
+                </div>
+                <div class="col-lg-1"> </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="resume" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                    <!-- Skills section start-->
+                    <section id="skills">
+                        <div class="row">                        
+                            <h1 class=" section-header">Skills <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                            width="48" height="48"
+                            viewBox="0 0 172 172"
+                            style=" fill:#000000;"><defs><linearGradient x1="96.75" y1="110.63631" x2="96.75" y2="127.20744" gradientUnits="userSpaceOnUse" id="color-1_44772_gr1"><stop offset="0" stop-color="#7493d6"></stop><stop offset="1" stop-color="#6e0fe8"></stop></linearGradient><linearGradient x1="86" y1="14.78125" x2="86" y2="156.47163" gradientUnits="userSpaceOnUse" id="color-2_44772_gr2"><stop offset="0" stop-color="#3257a8"></stop><stop offset="1" stop-color="#3c087e"></stop></linearGradient><linearGradient x1="43" y1="14.78125" x2="43" y2="156.47163" gradientUnits="userSpaceOnUse" id="color-3_44772_gr3"><stop offset="0" stop-color="#3257a8"></stop><stop offset="1" stop-color="#3c087e"></stop></linearGradient><linearGradient x1="59.125" y1="14.78125" x2="59.125" y2="156.47163" gradientUnits="userSpaceOnUse" id="color-4_44772_gr4"><stop offset="0" stop-color="#3257a8"></stop><stop offset="1" stop-color="#3c087e"></stop></linearGradient><linearGradient x1="53.75" y1="14.78125" x2="53.75" y2="156.47163" gradientUnits="userSpaceOnUse" id="color-5_44772_gr5"><stop offset="0" stop-color="#3257a8"></stop><stop offset="1" stop-color="#3c087e"></stop></linearGradient><linearGradient x1="53.75" y1="14.78125" x2="53.75" y2="156.47163" gradientUnits="userSpaceOnUse" id="color-6_44772_gr6"><stop offset="0" stop-color="#3257a8"></stop><stop offset="1" stop-color="#3c087e"></stop></linearGradient><linearGradient x1="51.0625" y1="14.78125" x2="51.0625" y2="156.47163" gradientUnits="userSpaceOnUse" id="color-7_44772_gr7"><stop offset="0" stop-color="#3257a8"></stop><stop offset="1" stop-color="#3c087e"></stop></linearGradient><linearGradient x1="96.75" y1="14.78125" x2="96.75" y2="156.47163" gradientUnits="userSpaceOnUse" id="color-8_44772_gr8"><stop offset="0" stop-color="#3257a8"></stop><stop offset="1" stop-color="#3c087e"></stop></linearGradient></defs><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M110.1875,126.3125h-26.875c-1.4835,0 -2.6875,-1.204 -2.6875,-2.6875v-10.75c0,-1.4835 1.204,-2.6875 2.6875,-2.6875h26.875c1.4835,0 2.6875,1.204 2.6875,2.6875v10.75c0,1.4835 -1.204,2.6875 -2.6875,2.6875z" fill="url(#color-1_44772_gr1)"></path><path d="M142.4375,16.125h-59.125c-4.44513,0 -8.0625,3.61737 -8.0625,8.0625v13.4375h-40.3125c-4.44513,0 -8.0625,3.61738 -8.0625,8.0625v3.182c-3.12019,1.11531 -5.375,4.06887 -5.375,7.568v91.375c0,4.44512 3.61737,8.0625 8.0625,8.0625h91.375c4.44512,0 8.0625,-3.61738 8.0625,-8.0625v-56.4375h13.4375c4.44512,0 8.0625,-3.61738 8.0625,-8.0625v-59.125c0,-4.44513 -3.61737,-8.0625 -8.0625,-8.0625zM34.9375,43h40.3125v5.375h-43v-2.6875c0,-1.4835 1.204,-2.6875 2.6875,-2.6875zM29.5625,53.75h45.6875v16.125h-48.375v-13.4375c0,-1.4835 1.204,-2.6875 2.6875,-2.6875zM123.625,147.8125c0,1.4835 -1.204,2.6875 -2.6875,2.6875h-91.375c-1.4835,0 -2.6875,-1.204 -2.6875,-2.6875v-72.5625h48.375v8.0625c0,4.44512 3.61737,8.0625 8.0625,8.0625h40.3125zM107.5,69.875c-5.92863,0 -10.75,-4.82138 -10.75,-10.75c0,-5.29169 3.26263,-9.34981 8.0625,-10.45437v13.14188h16.125v-13.09619c4.63325,1.19325 8.0625,5.40994 8.0625,10.40869c0,5.92862 -4.82137,10.75 -10.75,10.75h-2.6875v16.125h-5.375v-16.125zM145.125,83.3125c0,1.4835 -1.204,2.6875 -2.6875,2.6875h-21.5v-10.97306c7.61638,-1.28463 13.4375,-7.92544 13.4375,-15.90194c0,-8.89294 -7.23206,-16.125 -16.125,-16.125h-2.6875v13.4375h-5.375v-13.4375h-2.6875c-9.19394,0 -16.125,6.93106 -16.125,16.125c0,7.9765 5.82112,14.61731 13.4375,15.90194v10.97306h-21.5c-1.4835,0 -2.6875,-1.204 -2.6875,-2.6875v-59.125c0,-1.4835 1.204,-2.6875 2.6875,-2.6875h59.125c1.4835,0 2.6875,1.204 2.6875,2.6875z" fill="url(#color-2_44772_gr2)"></path><path d="M37.625,59.125h10.75v5.375h-10.75z" fill="url(#color-3_44772_gr3)"></path><path d="M53.75,59.125h10.75v5.375h-10.75z" fill="url(#color-4_44772_gr4)"></path><path d="M37.625,99.4375h32.25v5.375h-32.25z" fill="url(#color-5_44772_gr5)"></path><path d="M37.625,110.1875h32.25v5.375h-32.25z" fill="url(#color-6_44772_gr6)"></path><path d="M37.625,120.9375h26.875v5.375h-26.875z" fill="url(#color-7_44772_gr7)"></path><path d="M80.625,99.4375h32.25v5.375h-32.25z" fill="url(#color-8_44772_gr8)"></path></g></g></svg>
+                            </h1>
+                        </div>
+
+                            <div class="row">
+                                <div class="flex-col col-md-6 col-lg-12">
+                                    <div class="row">
+                                        <p class="skills-head">
+                                            Development <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                            width="32" height="32"
+                                            viewBox="0 0 172 172"
+                                            style=" fill:#000000;"><defs><linearGradient x1="88.6875" y1="67.63631" x2="88.6875" y2="87.34913" gradientUnits="userSpaceOnUse" id="color-1_RdDKot1cudKt_gr1"><stop offset="0" stop-color="#7493d6"></stop><stop offset="1" stop-color="#6e0fe8"></stop></linearGradient><linearGradient x1="86" y1="22.58575" x2="86" y2="153.79219" gradientUnits="userSpaceOnUse" id="color-2_RdDKot1cudKt_gr2"><stop offset="0" stop-color="#3257a8"></stop><stop offset="1" stop-color="#3c087e"></stop></linearGradient><linearGradient x1="86" y1="22.58575" x2="86" y2="153.79219" gradientUnits="userSpaceOnUse" id="color-3_RdDKot1cudKt_gr3"><stop offset="0" stop-color="#3257a8"></stop><stop offset="1" stop-color="#3c087e"></stop></linearGradient><linearGradient x1="88.6875" y1="22.58575" x2="88.6875" y2="153.79219" gradientUnits="userSpaceOnUse" id="color-4_RdDKot1cudKt_gr4"><stop offset="0" stop-color="#3257a8"></stop><stop offset="1" stop-color="#3c087e"></stop></linearGradient><linearGradient x1="88.6875" y1="22.58575" x2="88.6875" y2="153.79219" gradientUnits="userSpaceOnUse" id="color-5_RdDKot1cudKt_gr5"><stop offset="0" stop-color="#3257a8"></stop><stop offset="1" stop-color="#3c087e"></stop></linearGradient></defs><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g id="Layer_2"><path d="M88.6875,69.875c-4.56875,0 -8.0625,3.49375 -8.0625,8.0625c0,4.56875 3.49375,8.0625 8.0625,8.0625c4.56875,0 8.0625,-3.49375 8.0625,-8.0625c0,-4.56875 -3.49375,-8.0625 -8.0625,-8.0625z" fill="url(#color-1_RdDKot1cudKt_gr1)"></path><path d="M158.5625,123.625h-5.375v-83.3125c0,-7.525 -5.9125,-13.4375 -13.4375,-13.4375h-107.5c-7.525,0 -13.4375,5.9125 -13.4375,13.4375v83.3125h-5.375c-2.95625,0 -5.375,2.41875 -5.375,5.375v2.6875c0,7.525 5.9125,13.4375 13.4375,13.4375h129c7.525,0 13.4375,-5.9125 13.4375,-13.4375v-2.6875c0,-2.95625 -2.41875,-5.375 -5.375,-5.375zM24.1875,40.3125c0,-4.56875 3.49375,-8.0625 8.0625,-8.0625h107.5c4.56875,0 8.0625,3.49375 8.0625,8.0625v83.3125h-41.3875c-2.15,0 -3.7625,1.075 -4.8375,2.95625l-1.075,2.41875h-29.025l-1.075,-2.41875c-0.80625,-1.88125 -2.6875,-2.95625 -4.8375,-2.95625h-41.3875zM158.5625,131.6875c0,4.56875 -3.49375,8.0625 -8.0625,8.0625h-129c-4.56875,0 -8.0625,-3.49375 -8.0625,-8.0625v-2.6875h52.1375l1.075,2.41875c0.80625,1.88125 2.6875,2.95625 4.8375,2.95625h29.025c2.15,0 4.03125,-1.075 4.8375,-2.95625l1.075,-2.41875h52.1375z" fill="url(#color-2_RdDKot1cudKt_gr2)"></path><path d="M142.4375,45.6875c0,-4.56875 -3.49375,-8.0625 -8.0625,-8.0625h-96.75c-4.56875,0 -8.0625,3.49375 -8.0625,8.0625v72.5625h112.875zM137.0625,112.875h-102.125v-67.1875c0,-1.6125 1.075,-2.6875 2.6875,-2.6875h96.75c1.6125,0 2.6875,1.075 2.6875,2.6875z" fill="url(#color-3_RdDKot1cudKt_gr3)"></path><path d="M112.875,69.875h-1.34375c-0.26875,-1.075 -0.5375,-1.6125 -1.075,-2.41875l0.80625,-0.80625c2.15,-2.15 2.15,-5.375 0,-7.525l-3.7625,-3.7625c-2.15,-2.15 -5.64375,-2.15 -7.525,0l-1.075,1.075c-0.80625,-0.26875 -1.6125,-0.80625 -2.41875,-1.075v-1.6125c0,-2.95625 -2.41875,-5.375 -5.375,-5.375h-5.375c-2.95625,0 -5.375,2.41875 -5.375,5.375v1.34375c-0.80625,0.26875 -1.6125,0.5375 -2.41875,1.075l-1.075,-1.075c-2.15,-2.15 -5.64375,-2.15 -7.525,0l-3.7625,3.7625c-2.15,2.15 -2.15,5.375 0,7.525l1.075,0.80625c-0.26875,0.80625 -0.80625,1.34375 -1.075,2.41875h-1.075c-2.95625,0 -5.375,2.41875 -5.375,5.375v5.375c0,2.95625 2.41875,5.375 5.375,5.375h1.34375c0.26875,1.075 0.5375,1.6125 1.075,2.41875l-0.80625,0.80625c-1.075,1.075 -1.6125,2.41875 -1.6125,3.7625c0,1.34375 0.5375,2.6875 1.6125,3.7625l3.7625,3.7625c2.15,2.15 5.375,2.15 7.525,0l1.075,-1.075c0.80625,0.26875 1.6125,0.80625 2.41875,1.075v1.88125c0,2.95625 2.41875,5.375 5.375,5.375h5.375c2.95625,0 5.375,-2.41875 5.375,-5.375v-1.34375c0.80625,-0.26875 1.6125,-0.5375 2.41875,-1.075l1.075,1.075c2.15,2.15 5.375,2.15 7.525,0l3.7625,-3.7625c2.15,-2.15 2.15,-5.375 0,-7.525l-0.80625,-0.80625c0.26875,-0.80625 0.80625,-1.34375 1.075,-2.41875h0.80625c2.95625,0 5.375,-2.41875 5.375,-5.375v-5.375c0,-3.225 -2.41875,-5.64375 -5.375,-5.64375zM112.875,80.625h-5.64375l-0.5375,2.15c-0.26875,1.88125 -0.80625,2.95625 -1.6125,4.3l-1.34375,2.15l3.7625,3.7625l-3.7625,3.7625l-3.7625,-3.7625l-1.88125,1.075c-1.6125,0.80625 -3.225,1.6125 -4.8375,1.88125l-1.88125,0.80625v5.375h-5.375v-5.375l-2.15,-0.5375c-1.6125,-0.5375 -3.225,-1.075 -4.8375,-1.88125l-1.88125,-1.075l-3.7625,3.7625l-3.7625,-3.7625l3.7625,-3.7625l-1.34375,-2.15c-0.80625,-1.34375 -1.34375,-2.15 -1.6125,-4.3l-0.26875,-2.41875h-5.64375v-5.375h5.64375l0.5375,-2.15c0.26875,-1.88125 0.80625,-2.95625 1.6125,-4.3l1.34375,-2.15l-3.7625,-3.7625l3.7625,-3.7625l3.7625,3.7625l1.88125,-1.075c1.6125,-0.80625 3.225,-1.6125 4.8375,-1.88125l1.88125,-0.80625v-5.375h5.375v5.375l2.15,0.5375c1.6125,0.5375 3.225,1.075 4.8375,1.88125l1.88125,1.075l3.7625,-3.7625l3.7625,3.7625l-3.7625,3.7625l1.34375,2.15c0.80625,1.34375 1.34375,2.15 1.6125,4.3l0.5375,2.15h5.375z" fill="url(#color-4_RdDKot1cudKt_gr4)"></path><path d="M88.6875,67.1875c-5.9125,0 -10.75,4.8375 -10.75,10.75c0,5.9125 4.8375,10.75 10.75,10.75c5.9125,0 10.75,-4.8375 10.75,-10.75c0,-5.9125 -4.8375,-10.75 -10.75,-10.75zM88.6875,83.3125c-2.95625,0 -5.375,-2.41875 -5.375,-5.375c0,-2.95625 2.41875,-5.375 5.375,-5.375c2.95625,0 5.375,2.41875 5.375,5.375c0,2.95625 -2.41875,5.375 -5.375,5.375z" fill="url(#color-5_RdDKot1cudKt_gr5)"></path></g></g></svg> 
+                                        </p>  
+                                    </div>
+                                    <div class="row">
+                                        <div class="flex-col skills-text">
+                                            <p class="skills-p">
+                                                Java<br>
+                                                Python<br>
+                                                HTML/CSS/JS&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                                React.js<br>
+                                                Git<br>
+                                            </p>
+                                        </div>
+                                        <div class="flex-col">
+                                            <p class="skills-p">
+                                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
+                                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
+                                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
+                                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
+                                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="flex-col col-md-6 col-lg-12">
+                                    <div class="row">
+                                        <p class="skills-head">
+                                            Lab Techniques <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                            width="32" height="32"
+                                            viewBox="0 0 172 172"
+                                            style=" fill:#000000;"><defs><linearGradient x1="83.3125" y1="63.82813" x2="83.3125" y2="75.77406" gradientUnits="userSpaceOnUse" id="color-1_49452_gr1"><stop offset="0" stop-color="#7493d6"></stop><stop offset="1" stop-color="#6e0fe8"></stop></linearGradient><linearGradient x1="67.1875" y1="20.37931" x2="67.1875" y2="28.11125" gradientUnits="userSpaceOnUse" id="color-2_49452_gr2"><stop offset="0" stop-color="#7493d6"></stop><stop offset="1" stop-color="#6e0fe8"></stop></linearGradient><linearGradient x1="57.78125" y1="144.00431" x2="57.78125" y2="151.40838" gradientUnits="userSpaceOnUse" id="color-3_49452_gr3"><stop offset="0" stop-color="#7493d6"></stop><stop offset="1" stop-color="#6e0fe8"></stop></linearGradient><linearGradient x1="114.21875" y1="144.00431" x2="114.21875" y2="151.40838" gradientUnits="userSpaceOnUse" id="color-4_49452_gr4"><stop offset="0" stop-color="#7493d6"></stop><stop offset="1" stop-color="#6e0fe8"></stop></linearGradient><linearGradient x1="86" y1="15.23006" x2="86" y2="154.98006" gradientUnits="userSpaceOnUse" id="color-5_49452_gr5"><stop offset="0" stop-color="#3257a8"></stop><stop offset="1" stop-color="#3c087e"></stop></linearGradient></defs><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M83.3125,64.5c-2.96853,0 -5.375,2.40647 -5.375,5.375c0,2.96853 2.40647,5.375 5.375,5.375c2.96853,0 5.375,-2.40647 5.375,-5.375c0,-2.96853 -2.40647,-5.375 -5.375,-5.375z" fill="url(#color-1_49452_gr1)"></path><path d="M53.75,21.5h26.875v5.375h-26.875z" fill="url(#color-2_49452_gr2)"></path><path d="M51.0625,145.125h13.4375v5.375h-13.4375z" fill="url(#color-3_49452_gr3)"></path><path d="M107.5,145.125h13.4375v5.375h-13.4375z" fill="url(#color-4_49452_gr4)"></path><path d="M139.75,129h-8.0625c0,-5.95281 -3.24919,-11.15044 -8.0625,-13.94275v-39.80725c0,-7.40944 -6.02806,-13.4375 -13.4375,-13.4375h-12.93225c-2.36231,-4.06887 -6.44731,-7.009 -11.25525,-7.82062v-10.99187c0,-2.96431 -2.41069,-5.375 -5.375,-5.375h-2.6875v-5.375h2.6875c2.96431,0 5.375,-2.41069 5.375,-5.375v-5.375c0,-2.96431 -2.41069,-5.375 -5.375,-5.375h-26.875c-2.96431,0 -5.375,2.41069 -5.375,5.375v5.375c0,2.96431 2.41069,5.375 5.375,5.375h2.6875v5.375h-2.6875c-2.96431,0 -5.375,2.41069 -5.375,5.375v53.75c0,2.96431 2.41069,5.375 5.375,5.375h2.6875c0,2.96431 2.41069,5.375 5.375,5.375h10.75c2.96431,0 5.375,-2.41069 5.375,-5.375h2.6875c2.96431,0 5.375,-2.41069 5.375,-5.375v-10.99187c4.80794,-0.81163 8.89294,-3.74906 11.25525,-7.82063h7.55725c1.4835,0 2.6875,1.204 2.6875,2.6875v34.43225c-4.81331,2.79231 -8.0625,7.98994 -8.0625,13.94275h-21.5v-5.375h13.4375v-5.375h-48.375v5.375h13.4375v5.375h-24.1875c-2.96431,0 -5.375,2.41069 -5.375,5.375v5.375c0,2.96431 2.41069,5.375 5.375,5.375h13.4375v2.6875c0,4.44512 3.61738,8.0625 8.0625,8.0625h8.0625c4.44513,0 8.0625,-3.61738 8.0625,-8.0625v-2.6875h32.25v2.6875c0,4.44512 3.61738,8.0625 8.0625,8.0625h8.0625c4.44512,0 8.0625,-3.61738 8.0625,-8.0625v-2.6875h13.4375c2.96431,0 5.375,-2.41069 5.375,-5.375v-5.375c0,-2.96431 -2.41069,-5.375 -5.375,-5.375zM53.75,26.875v-5.375h26.875v5.375zM61.8125,32.25h10.75v5.375h-10.75zM53.75,96.75v-43h13.4375v-5.375h-13.4375v-5.375h26.875v10.99188c-7.61369,1.28463 -13.4375,7.90662 -13.4375,15.88313c0,7.9765 5.82381,14.59581 13.4375,15.88313v10.99187zM83.3125,80.625c-5.92862,0 -10.75,-4.82138 -10.75,-10.75c0,-5.92862 4.82138,-10.75 10.75,-10.75c5.92863,0 10.75,4.82138 10.75,10.75c0,5.92862 -4.82137,10.75 -10.75,10.75zM104.8125,72.5625h-5.61688c0.14781,-0.87613 0.24188,-1.77106 0.24188,-2.6875c0,-0.91644 -0.09406,-1.81137 -0.24188,-2.6875h10.99188c4.44512,0 8.0625,3.61737 8.0625,8.0625v37.86688c-0.87613,-0.14781 -1.77106,-0.24188 -2.6875,-0.24188c-0.91644,0 -1.81137,0.09406 -2.6875,0.24188v-32.49188c0,-4.44513 -3.61737,-8.0625 -8.0625,-8.0625zM115.5625,118.25c5.92863,0 10.75,4.82137 10.75,10.75h-5.375c0,-2.96431 -2.41069,-5.375 -5.375,-5.375c-2.96431,0 -5.375,2.41069 -5.375,5.375h-5.375c0,-5.92863 4.82137,-10.75 10.75,-10.75zM61.8125,123.625h10.75v5.375h-10.75zM64.5,147.8125c0,1.4835 -1.204,2.6875 -2.6875,2.6875h-8.0625c-1.4835,0 -2.6875,-1.204 -2.6875,-2.6875v-2.6875h13.4375zM120.9375,147.8125c0,1.4835 -1.204,2.6875 -2.6875,2.6875h-8.0625c-1.4835,0 -2.6875,-1.204 -2.6875,-2.6875v-2.6875h13.4375zM139.75,139.75h-107.5v-5.375h107.5z" fill="url(#color-5_49452_gr5)"></path></g></g></svg>
+                                        </p> 
+                                    </div>
+                                    <div class="row">
+                                        <div class="flex-col skills-text">
+                                            <p class="skills-p">
+                                                PCR<br>
+                                                Western Blot<br>
+                                                Cell Culture<br>
+                                                DNA Isolation<br>
+                                                Protein Isolation&nbsp<br>
+                                            </p>
+                                        </div>
+                                        <div class="flex-col">
+                                            <p class="skills-p">
+                                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
+                                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
+                                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
+                                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
+                                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="flex-col col-md-6 col-lg-12">
+                                    <div class="row">
+                                        <p class="skills-head">
+                                            Other Skills <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                            width="32" height="32"
+                                            viewBox="0 0 172 172"
+                                            style=" fill:#000000;"><defs><linearGradient x1="35.64431" y1="19.84181" x2="35.64431" y2="51.41725" gradientUnits="userSpaceOnUse" id="color-1_oLZJLAFh4Kgs_gr1"><stop offset="0" stop-color="#7493d6"></stop><stop offset="1" stop-color="#6e0fe8"></stop></linearGradient><linearGradient x1="49.837" y1="99.2655" x2="49.837" y2="127.53263" gradientUnits="userSpaceOnUse" id="color-2_oLZJLAFh4Kgs_gr2"><stop offset="0" stop-color="#7493d6"></stop><stop offset="1" stop-color="#6e0fe8"></stop></linearGradient><linearGradient x1="85.72319" y1="15.49613" x2="85.72319" y2="157.51975" gradientUnits="userSpaceOnUse" id="color-3_oLZJLAFh4Kgs_gr3"><stop offset="0" stop-color="#3257a8"></stop><stop offset="1" stop-color="#3c087e"></stop></linearGradient></defs><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M29.30181,51.38231l-8.8365,-8.83919c-2.31931,-2.31931 -2.31931,-6.08181 0,-8.40112l14.40231,-14.40231c2.31931,-2.31931 6.08181,-2.31931 8.40113,0l9.29337,9.29338" fill="url(#color-1_oLZJLAFh4Kgs_gr1)"></path><path d="M61.834,136.58413c0.02688,-0.02687 0.05644,-0.04837 0.08063,-0.07525c4.24894,-4.25163 6.53869,-10.13456 6.278,-16.14381c-0.26606,-6.08988 -3.00462,-11.62075 -7.71581,-15.57944c-3.72487,-3.12825 -8.342,-4.78106 -13.35687,-4.78106c-5.75662,0 -11.40306,2.26825 -15.66006,6.20813z" fill="url(#color-2_oLZJLAFh4Kgs_gr2)"></path><path d="M156.83175,143.21956l-4.07156,-17.78588l-45.62031,-45.623l42.47325,-46.55556c3.74638,-4.15756 3.57975,-10.5135 -0.37894,-14.47219c-3.956,-3.956 -10.31194,-4.128 -14.48562,-0.3655l-46.54213,42.4625l-14.19806,-14.20075v0l-7.90394,-7.90394c0.26069,-0.91913 0.44344,-1.86512 0.44344,-2.84875c0,-2.78156 -1.08306,-5.3965 -3.05031,-7.36106c-2.75737,-2.75737 -6.6865,-3.59319 -10.20175,-2.59881l-8.12969,-8.127c-3.36206,-3.36206 -8.83381,-3.36744 -12.20125,0l-14.40231,14.40231c-1.62862,1.62594 -2.52625,3.79475 -2.52625,6.10063c0,2.30588 0.89762,4.472 2.52625,6.10063l8.127,8.127c-0.99706,3.51525 -0.15856,7.44169 2.6015,10.20175c1.96456,1.96725 4.5795,3.053 7.36106,3.053c0.98094,0 1.92694,-0.18006 2.84606,-0.44344l10.37644,10.37375l10.50813,10.50812l-4.63056,4.22475c-11.11012,-3.07719 -23.74137,-0.08869 -32.54025,8.7075c-6.192,6.192 -8.82306,15.25963 -6.86656,23.66881c1.85169,7.96306 1.40288,16.26744 -1.29537,24.0155l-0.70144,2.01563l1.80063,1.1395c7.138,4.51769 15.11719,6.72681 23.03456,6.72681c11.05638,0 21.99181,-4.31075 30.33113,-12.65275c6.37475,-6.37475 9.80669,-15.19781 9.417,-24.21169c-0.11556,-2.666 -0.58319,-5.24869 -1.3115,-7.73194l4.13338,-4.53113l44.40287,44.40288l17.78587,4.07156c0.77669,0.17737 1.56144,0.26606 2.3435,0.26606c2.80038,0 5.53088,-1.12337 7.60831,-3.20081c2.65794,-2.66062 3.75713,-6.38012 2.93744,-9.9545zM96.26088,91.73513l36.464,36.46131c-0.69875,0.559 -1.37331,1.15294 -2.01294,1.79256c-0.63694,0.63694 -1.22819,1.31419 -1.78719,2.01294l-36.292,-36.28931zM134.51206,133.78912c3.55825,-3.55556 8.39038,-5.504 13.39719,-5.48519l1.61787,7.0735c-3.25725,0.74444 -6.26456,2.36769 -8.66181,4.76225c-2.38381,2.38381 -3.99094,5.40725 -4.74075,8.66719l-7.10575,-1.62594c-0.02687,-5.06056 1.90006,-9.79862 5.49325,-13.39181zM143.11744,123.39119c-1.98069,0.39238 -3.89956,1.01856 -5.71362,1.88662l-37.52019,-37.5175l3.62813,-3.97481zM74.00838,54.27944l10.22325,10.22594l-3.97481,3.62544l-10.04856,-10.05125zM76.282,71.75894l-3.97481,3.62812l-9.70187,-9.70187l3.80281,-3.80281zM22.36269,40.64306c-0.61544,-0.61544 -0.95138,-1.42975 -0.95138,-2.29781c0,-0.86806 0.33863,-1.68506 0.95138,-2.29781l14.40231,-14.40231c1.27119,-1.27388 3.32981,-1.27119 4.601,0l7.16756,7.16756l-19.00331,19.00331zM33.09119,58.97181c-1.96188,-1.96188 -1.96188,-5.15731 0,-7.11919l19.48438,-19.48437c0.98094,-0.98094 2.27094,-1.47275 3.55825,-1.47275c1.29,0 2.58,0.49181 3.56094,1.47275c1.96188,1.96187 1.96188,5.16 0,7.12187l-19.48169,19.48169c-1.90544,1.90812 -5.21913,1.90275 -7.12188,0zM44.3975,62.67788l19.00331,-19.00331l6.80744,6.80744l-19.00331,19.00331zM55.00506,73.28544l3.80013,-3.80013l9.52719,9.52719l-3.97481,3.62544zM65.71475,140.309c-12.03462,12.03731 -30.229,14.47487 -44.9135,6.24575c2.42144,-8.1055 2.69825,-16.66787 0.77937,-24.91044c-1.53725,-6.61394 0.54287,-13.76 5.43144,-18.64856c10.16144,-10.16144 26.37781,-11.17731 36.91819,-2.32469c5.88025,4.93694 9.29875,11.84919 9.62931,19.46019c0.32787,7.51156 -2.53163,14.86456 -7.84481,20.17775zM67.39175,96.5565c-1.87319,-1.57219 -3.90494,-2.85681 -6.02806,-3.91569l35.52069,-32.40587l6.02806,6.02806l3.80013,-3.80013l-5.85337,-5.85337l4.45856,-4.06619l5.65988,5.65988l3.80013,-3.80013l-5.48519,-5.48519l4.45856,-4.06619l5.289,5.289l3.80013,-3.80013l-5.11431,-5.11431l20.63463,-18.82325c2.03444,-1.83556 5.1385,-1.74688 7.07619,0.18275c1.935,1.935 2.01563,5.04175 0.19619,7.06275l-70.21094,76.95656c-1.94306,-3.784 -4.63325,-7.19713 -8.03025,-10.04856zM89.00731,99.68744l37.00687,37.00687c-0.86269,1.81406 -1.505,3.72487 -1.90006,5.70019l-38.73225,-38.73494z" fill="url(#color-3_oLZJLAFh4Kgs_gr3)"></path></g></g></svg>
+                                        </p>
+                                    </div>
+                                    <div class="row">
+                                        <div class="flex-col skills-text">
+                                            <p class="skills-p">
+                                                Photoshop<br>
+                                                Figma<br>
+                                                UI/UX Design&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+                                            </p>
+                                        </div>
+                                        <div class="flex-col">
+                                            <p class="skills-p">
+                                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
+                                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
+                                                <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="100"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="200"></i> <i class="fas fa-circle blue-dot" data-aos="fade-right" data-aos-duration="400"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="800"></i> <i class="fas fa-circle grey-dot" data-aos="fade-right" data-aos-duration="1200"></i><br>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </section>
+                    <!-- skills section end -->
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                    <!-- Experience section start-->
+                    <section id="experience">
+                        <div class="row">
+                            <h1 class=" section-header">Experience <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                width="48" height="48"
+                                viewBox="0 0 172 172"
+                                style=" fill:#000000;"><defs><linearGradient x1="53.75" y1="68.08244" x2="53.75" y2="92.72413" gradientUnits="userSpaceOnUse" id="color-1_49457_gr1"><stop offset="0" stop-color="#7493d6"></stop><stop offset="1" stop-color="#6e0fe8"></stop></linearGradient><linearGradient x1="102.125" y1="68.08244" x2="102.125" y2="92.72413" gradientUnits="userSpaceOnUse" id="color-2_49457_gr2"><stop offset="0" stop-color="#7493d6"></stop><stop offset="1" stop-color="#6e0fe8"></stop></linearGradient><linearGradient x1="86" y1="20.15625" x2="86" y2="151.73356" gradientUnits="userSpaceOnUse" id="color-3_49457_gr3"><stop offset="0" stop-color="#3257a8"></stop><stop offset="1" stop-color="#3c087e"></stop></linearGradient></defs><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M61.8125,83.3125c0,4.45319 -3.60931,8.0625 -8.0625,8.0625v0c-4.45319,0 -8.0625,-3.60931 -8.0625,-8.0625v-5.375c0,-4.45319 3.60931,-8.0625 8.0625,-8.0625v0c4.45319,0 8.0625,3.60931 8.0625,8.0625z" fill="url(#color-1_49457_gr1)"></path><path d="M110.1875,83.3125c0,4.45319 -3.60931,8.0625 -8.0625,8.0625v0c-4.45319,0 -8.0625,-3.60931 -8.0625,-8.0625v-5.375c0,-4.45319 3.60931,-8.0625 8.0625,-8.0625v0c4.45319,0 8.0625,3.60931 8.0625,8.0625z" fill="url(#color-2_49457_gr2)"></path><path d="M155.875,120.9375c0,-4.1065 -2.40263,-7.90125 -6.2135,-9.56481c1.47275,-3.93181 0.51062,-8.38231 -2.44563,-11.34125c-2.96431,-2.95894 -7.42288,-3.91837 -11.23644,-2.53969c-0.42462,-0.89225 -0.97287,-1.70387 -1.60712,-2.4295v-12.24694c3.12287,-1.11262 5.375,-4.06887 5.375,-7.568v-16.125c0,-7.40944 -6.02806,-13.4375 -13.4375,-13.4375h-16.125v-2.6875c0,-2.96431 -2.41069,-5.375 -5.375,-5.375h-2.6875v-2.6875c0,-7.40944 -6.02806,-13.4375 -13.4375,-13.4375h-21.5c-7.40944,0 -13.4375,6.02806 -13.4375,13.4375v2.6875h-2.6875c-2.96431,0 -5.375,2.41069 -5.375,5.375v2.6875h-16.125c-7.40944,0 -13.4375,6.02806 -13.4375,13.4375v16.125c0,3.49913 2.25212,6.45538 5.375,7.568v27.37219v8.0625v10.75c0,4.44512 3.61738,8.0625 8.0625,8.0625h73.11344c0.47837,1.77375 1.38675,3.43462 2.7305,4.78106c2.96162,2.95625 7.41213,3.913 11.23644,2.53969c1.77375,3.71412 5.5685,6.11675 9.67231,6.11675c4.10381,0 7.89856,-2.40263 9.56481,-6.2135c3.92644,1.47006 8.37694,0.51331 11.34125,-2.44563c2.95894,-2.95894 3.91837,-7.40944 2.537,-11.23375c3.71681,-1.76838 6.11944,-5.56313 6.11944,-9.66963zM102.86944,111.26788c-3.71681,1.76838 -6.11944,5.56313 -6.11944,9.66962h-67.1875c-1.4835,0 -2.6875,-1.20669 -2.6875,-2.6875v-2.6875h21.5v-5.375h-21.5v-5.375h16.125v-5.375h-16.125v-16.125h16.125c0,5.92863 4.82138,10.75 10.75,10.75c5.92862,0 10.75,-4.82137 10.75,-10.75h26.875c0,5.92863 4.82137,10.75 10.75,10.75c5.92863,0 10.75,-4.82137 10.75,-10.75h16.125v8.428c-0.86806,-0.22844 -1.76838,-0.3655 -2.6875,-0.3655c-4.10381,0 -7.89856,2.40263 -9.56481,6.2135c-3.92375,-1.46738 -8.37694,-0.516 -11.34125,2.44562c-2.95625,2.95625 -3.91569,7.40944 -2.537,11.23375zM59.125,83.3125c0,2.96431 -2.41069,5.375 -5.375,5.375c-2.96431,0 -5.375,-2.41069 -5.375,-5.375v-5.375c0,-2.96431 2.41069,-5.375 5.375,-5.375c2.96431,0 5.375,2.41069 5.375,5.375zM96.75,83.3125v-5.375c0,-2.96431 2.41069,-5.375 5.375,-5.375c2.96431,0 5.375,2.41069 5.375,5.375v5.375c0,2.96431 -2.41069,5.375 -5.375,5.375c-2.96431,0 -5.375,-2.41069 -5.375,-5.375zM104.8125,45.6875h-10.75v-2.6875h10.75zM59.125,34.9375c0,-4.44513 3.61738,-8.0625 8.0625,-8.0625h21.5c4.44512,0 8.0625,3.61737 8.0625,8.0625v2.6875h-2.6875c-2.96431,0 -5.375,2.41069 -5.375,5.375v2.6875h-21.5v-2.6875c0,-2.96431 -2.41069,-5.375 -5.375,-5.375h-2.6875zM51.0625,43h10.75v2.6875h-10.75zM21.5,59.125c0,-4.44512 3.61737,-8.0625 8.0625,-8.0625h96.75c4.44512,0 8.0625,3.61738 8.0625,8.0625v16.125c0,1.48081 -1.204,2.6875 -2.6875,2.6875h-18.8125c0,-5.92862 -4.82137,-10.75 -10.75,-10.75c-5.92863,0 -10.75,4.82138 -10.75,10.75h-26.875c0,-5.92862 -4.82138,-10.75 -10.75,-10.75c-5.92862,0 -10.75,4.82138 -10.75,10.75h-18.8125c-1.4835,0 -2.6875,-1.20669 -2.6875,-2.6875zM26.875,129v-3.182c0.84388,0.301 1.7415,0.4945 2.6875,0.4945h68.68712c1.08038,1.81137 2.6875,3.30562 4.71119,4.18981c-0.14513,0.38969 -0.24994,0.78744 -0.34938,1.18519h-73.04894c-1.4835,0 -2.6875,-1.20669 -2.6875,-2.6875zM147.447,125.7535c-2.56925,1.22013 -3.77863,4.07156 -2.81919,6.63544c0.73369,1.96187 0.26069,4.18175 -1.21206,5.65181c-1.47006,1.47006 -3.67919,1.95381 -5.6545,1.21475c-2.5585,-0.96212 -5.41531,0.25262 -6.63275,2.8165c-0.89494,1.88125 -2.74394,3.053 -4.816,3.053c-2.07206,0 -3.92106,-1.17175 -4.816,-3.053c-0.93794,-1.97263 -2.84069,-3.14706 -4.83481,-3.14706c-0.59931,0 -1.20669,0.1075 -1.79794,0.32788c-1.96994,0.73637 -4.18713,0.258 -5.6545,-1.21206c-1.47275,-1.47275 -1.94844,-3.69263 -1.21206,-5.6545c0.95944,-2.56387 -0.24994,-5.41531 -2.8165,-6.63275c-1.88394,-0.89763 -3.05569,-2.74125 -3.05569,-4.816c0,-2.07475 1.17175,-3.91837 3.053,-4.816c2.56925,-1.22013 3.77862,-4.07156 2.81919,-6.63544c-0.73369,-1.96187 -0.26069,-4.18175 1.21206,-5.65181c1.47275,-1.47006 3.68725,-1.95112 5.6545,-1.21475c2.55313,0.95675 5.41263,-0.25262 6.63275,-2.8165c0.89494,-1.88125 2.74394,-3.053 4.816,-3.053c2.07206,0 3.92106,1.17175 4.816,3.053c1.22012,2.56656 4.07962,3.77862 6.63275,2.81919c1.97262,-0.73906 4.18444,-0.258 5.6545,1.21206c1.47275,1.47275 1.94844,3.69263 1.21206,5.6545c-0.95944,2.56387 0.24994,5.41531 2.8165,6.63275c1.88394,0.89763 3.05569,2.74125 3.05569,4.816c0,2.07475 -1.17175,3.91837 -3.053,4.816z" fill="url(#color-3_49457_gr3)"></path></g></g></svg>
+                            </h1>
+                        </div>
+                        <br>
+
+                        <div class="row"  data-aos="fade-up" data-aos-duration="1000">
+                            <p class="skills-head">Software Developer <span style="color:#3257A8">@ Diedrichsen Lab</span></p><br>
+                        </div>
+                        <div class="row"  data-aos="fade-up" data-aos-duration="1000">
+                            <h6 class="exp-date">May 2020 - Aug 2020</h6>
+                        </div>
+                        <div class="row"  data-aos="fade-up" data-aos-duration="1000">
+                            <p class="exp-text-p">
+                                • Transpiled the MATLAB SUIT toolbox into Python for cerebellum visualization<br>
+                            </p>
+                        </div>
+                        <br>
+
+                        <div class="row"  data-aos="fade-up" data-aos-duration="1000">
+                            <p class="skills-head">Chair of SheHacks <span style="color:#3257A8">@ Women in Tech Society</span></p>
+                        </div>
+                        <div class="row"  data-aos="fade-up" data-aos-duration="1000">
+                            <h6 class="exp-date">Apr 2020 - Present (Director, 2019-2020)</h6>
+                        </div>
+                        <div class="row" data-aos="fade-up" data-aos-duration="1000">
+                            <p class="exp-text-p">
+                                • Organized Canada's largest all-female hackathon<br>
+                                • Expanded hackathon from 12 hours to 24 hours<br>
+                                • Adapted to a virtual hybrid hackathon format for 2020<br>
+                                • Learn more about the hackathon at <a href="shehacks.ca">www.shehacks.ca</a>!<br>
+                            </p>
+                        </div>
+
+                        <br>
+                
+                        <div class="row"  data-aos="fade-up" data-aos-duration="1000">
+                            <p class="skills-head">Student Coordinator <span style="color:#3257A8">@ Western Co-Curricular Record</span></p>
+                        </div>
+                        <div class="row" data-aos="fade-up" data-aos-duration="1000">
+                            <h6 class="exp-date">Sep 2019 - May 2020</h6>
+                        </div>
+                        <div class="row" data-aos="fade-up" data-aos-duration="1000">
+                            <p class="exp-text-p">
+                                • Maintained Western University's database of 500+ co-curricular community activities<br>
+                                • Connected with students, staff, and faculty on campus to update and track activities<br>
+                            </p>
+                        </div>
+
+                        <br>
+                        <div class="row"  data-aos="fade-up" data-aos-duration="1000">
+                            <p class="skills-head">Research Assistant <span style="color:#3257A8">@ London Regional Cancer Program</span></p>
+                        </div>
+                        <div class="row" data-aos="fade-up" data-aos-duration="1000">
+                            <h6 class="exp-date">May 2019 - Aug 2019</h6>
+                        </div>
+                        <div class="row" data-aos="fade-up" data-aos-duration="1000">
+                            <p class="exp-text-p">
+                                • Studied the role of MRT drug in destroying ovarian cancer tumours<br>
+                                • Streamlined an ImageJ Macro that uses AI to detect cell irregularities<br>
+                                • Co-Author of <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7269771/">Inhibiting ULK1 kinase decreases autophagy and cell viability in high-grade serous ovarian cancer spheroids</a> 
+                                <br>
+                            </p>
+                        </div>
+                    </section>
+                    <!-- Experience section ends-->
+                </div>
+                <div class="col-lg-1"></div>
+            </div>
+        </div>
+    </section>
 
     <!-- projects start -->
-    <section id="projects">
+    <section id="projects" class="section">
         <div class="container">
-            <h2 style="font-family: Poppins; font-weight: 700; text-align: center; color: white; padding-bottom: 10px;">Projects</h2>
             <div class="row">
-                <div class="col-md-4" style="padding-top: 10px; padding-bottom: 10px;" data-aos="fade-up" data-aos-duration="700">
-                    <div class="proj-container" style="background-color: black; padding: 0;">
-                        <a href="../aisle-vision.html">
-                            <img src="assets/aisle-vision.jpg" alt="" class="image">   
-                            <div class="middle">
-                                <h3 class="text">Aisle Vision</h3>
-                                <h6 class="text">Hack Western, 2019</h6>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 col-md-12">
+                    <h1 class="section-header">Projects <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                        width="48" height="48"
+                        viewBox="0 0 172 172"
+                        style=" fill:#000000;"><defs><linearGradient x1="43" y1="30.45744" x2="43" y2="45.408" gradientUnits="userSpaceOnUse" id="color-1_48250_gr1"><stop offset="0" stop-color="#7493d6"></stop><stop offset="1" stop-color="#6e0fe8"></stop></linearGradient><linearGradient x1="59.125" y1="30.45744" x2="59.125" y2="45.408" gradientUnits="userSpaceOnUse" id="color-2_48250_gr2"><stop offset="0" stop-color="#7493d6"></stop><stop offset="1" stop-color="#6e0fe8"></stop></linearGradient><linearGradient x1="75.25" y1="30.45744" x2="75.25" y2="45.408" gradientUnits="userSpaceOnUse" id="color-3_48250_gr3"><stop offset="0" stop-color="#7493d6"></stop><stop offset="1" stop-color="#6e0fe8"></stop></linearGradient><linearGradient x1="86" y1="21.5" x2="86" y2="155.46381" gradientUnits="userSpaceOnUse" id="color-4_48250_gr4"><stop offset="0" stop-color="#3257a8"></stop><stop offset="1" stop-color="#3c087e"></stop></linearGradient><linearGradient x1="53.535" y1="21.5" x2="53.535" y2="155.46381" gradientUnits="userSpaceOnUse" id="color-5_48250_gr5"><stop offset="0" stop-color="#3257a8"></stop><stop offset="1" stop-color="#3c087e"></stop></linearGradient><linearGradient x1="119.18794" y1="21.5" x2="119.18794" y2="155.46381" gradientUnits="userSpaceOnUse" id="color-6_48250_gr6"><stop offset="0" stop-color="#3257a8"></stop><stop offset="1" stop-color="#3c087e"></stop></linearGradient><linearGradient x1="87.34375" y1="21.5" x2="87.34375" y2="155.46381" gradientUnits="userSpaceOnUse" id="color-7_48250_gr7"><stop offset="0" stop-color="#3257a8"></stop><stop offset="1" stop-color="#3c087e"></stop></linearGradient></defs><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M43,43c-2.96431,0 -5.375,-2.41069 -5.375,-5.375c0,-2.96431 2.41069,-5.375 5.375,-5.375c2.96431,0 5.375,2.41069 5.375,5.375c0,2.96431 -2.41069,5.375 -5.375,5.375zM43,37.62231v0.00269z" fill="url(#color-1_48250_gr1)"></path><path d="M59.125,43c-2.96431,0 -5.375,-2.41069 -5.375,-5.375c0,-2.96431 2.41069,-5.375 5.375,-5.375c2.96431,0 5.375,2.41069 5.375,5.375c0,2.96431 -2.41069,5.375 -5.375,5.375zM59.125,37.62231v0.00269z" fill="url(#color-2_48250_gr2)"></path><path d="M75.25,43c-2.96431,0 -5.375,-2.41069 -5.375,-5.375c0,-2.96431 2.41069,-5.375 5.375,-5.375c2.96431,0 5.375,2.41069 5.375,5.375c0,2.96431 -2.41069,5.375 -5.375,5.375zM75.25,37.62231v0.00269z" fill="url(#color-3_48250_gr3)"></path><path d="M137.0625,21.5h-102.125c-7.40944,0 -13.4375,6.02806 -13.4375,13.4375v102.125c0,7.40944 6.02806,13.4375 13.4375,13.4375h102.125c7.40944,0 13.4375,-6.02806 13.4375,-13.4375v-102.125c0,-7.40944 -6.02806,-13.4375 -13.4375,-13.4375zM34.9375,26.875h102.125c4.44512,0 8.0625,3.61737 8.0625,8.0625v13.4375h-118.25v-13.4375c0,-4.44513 3.61737,-8.0625 8.0625,-8.0625zM137.0625,145.125h-102.125c-4.44513,0 -8.0625,-3.61738 -8.0625,-8.0625v-83.3125h118.25v83.3125c0,4.44513 -3.61737,8.0625 -8.0625,8.0625z" fill="url(#color-4_48250_gr4)"></path><path d="M62.27206,75.9165l-19.18069,16.78344c-1.16906,1.02125 -1.83825,2.49938 -1.83825,4.05275c0,1.55338 0.66919,3.02881 1.83825,4.05275l19.18069,16.78075l3.53944,-4.04469l-19.18069,-16.79956l19.18069,-16.78075z" fill="url(#color-5_48250_gr5)"></path><path d="M111.60919,76.01594l-3.75444,3.84581l17.29138,16.899l-17.29138,16.88019l3.75444,3.84581l17.29138,-16.88019c1.04544,-1.02125 1.62325,-2.39187 1.62325,-3.85388c0,-1.462 -0.57781,-2.83263 -1.62325,-3.85387z" fill="url(#color-6_48250_gr6)"></path><path d="M72.72106,130.77644l5.05787,1.82212l24.1875,-67.1875l-5.05788,-1.82212z" fill="url(#color-7_48250_gr7)"></path></g></g></svg>
+                    </h1>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-xs-12" data-aos="fade-up" data-aos-duration="700">
+                            <div class="proj-container" style="background-color: black; padding: 0;">
+                                <a href="../suit-python.html">
+                                    <img src="../assets/suit-python.png" alt="" class="image">   
+                                    <div class="middle">
+                                        <h3 class="text">SUIT-Py</h3>
+                                        <h6 class="text">Python, Matplotlib, PyOpenGL</h6>
+                                    </div>
+                                </a>    
                             </div>
-                        </a>    
-                    </div>
-                </div>
-                <div class="col-md-4" style="padding-top: 10px; padding-bottom: 10px;" data-aos="fade-up" data-aos-duration="900">
-                    <div class="proj-container" style="background-color: black; padding: 0;">
-                        <a href="../cpr-alert.html">
-                            <img src="assets/cpr-alert.png" alt="" class="image2">   
-                            <div class="middle">
-                                <h3 class="text">CPR Alert</h3>
-                                <h6 class="text">StarterHacks, 2020</h6>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12" data-aos="fade-up" data-aos-duration="900">
+                            <div class="proj-container" style="background-color: black; padding: 0;">
+                                <a href="../parrot.html">
+                                    <img src="../assets/parrot.png" alt="" class="image">   
+                                    <div class="middle">
+                                        <h3 class="text">Parrot</h3>
+                                        <h6 class="text">Python Flask, React.js, Google Speech to Text API</h6>
+                                    </div>
+                                </a>
                             </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-md-4" style="padding-top: 10px; padding-bottom: 10px;" data-aos="fade-up" data-aos-duration="1200">
-                    <div class="proj-container" style="background-color: black; padding: 0;">
-                        <a href="../save-spend.html">
-                            <img src="assets/save-spend.png" alt="" class="image3">   
-                            <div class="middle">
-                                <h3 class="text">save-spend</h3>
-                                <h6 class="text">ElleHacks, 2020</h6>
+                        </div>
+        
+                        <div class="col-md-4 col-sm-6 col-xs-12" data-aos="fade-up" data-aos-duration="1200">
+                            <div class="proj-container" style="background-color: black; padding: 0;">
+                                <a href="../wits.html">
+                                    <img src="../assets/wits.png" alt="" class="image">   
+                                    <div class="middle">
+                                        <h3 class="text">WITS Website</h3>
+                                        <h6 class="text">HTML/CSS, Javascript, Python </h6>
+                                    </div>
+                                </a>
                             </div>
-                        </a>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12" data-aos="fade-up" data-aos-duration="700">
+                            <div class="proj-container" style="background-color: black; padding: 0;">
+                                <a href="../aisle-vision.html">
+                                    <img src="../assets/aisle-vision.jpg" alt="" class="image">   
+                                    <div class="middle">
+                                        <h3 class="text">Aisle Vision</h3>
+                                        <h6 class="text">Java, Python, PHP, HTML/CSS</h6>
+                                    </div>
+                                </a>    
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12" data-aos="fade-up" data-aos-duration="900">
+                            <div class="proj-container" style="background-color: black; padding: 0;">
+                                <a href="../cpr-alert.html">
+                                    <img src="../assets/cpr-alert.png" alt="" class="image">   
+                                    <div class="middle">
+                                        <h3 class="text">CPR Alert</h3>
+                                        <h6 class="text">Java, JavaScript</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+        
+                        <div class="col-md-4 col-sm-6 col-xs-12" data-aos="fade-up" data-aos-duration="1200">
+                            <div class="proj-container" style="background-color: black; padding: 0;">
+                                <a href="../save-spend.html">
+                                    <img src="../assets/save-spend.png" alt="" class="image">   
+                                    <div class="middle">
+                                        <h3 class="text">save-spend</h3>
+                                        <h6 class="text">Java, JavaScript</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
+                    
                 </div>
+                <div class="col-lg-1"></div>
+                
+                
 
                 <!-- overlay script -->
                 <script>
@@ -456,31 +457,6 @@
                         document.getElementById("overlay").style.display = "none";
                     }
                 </script>
-
-            </div>
-            <div class = "row">
-                <div class="col-md-6">
-                    <div class="proj-container" style = "background-color: black; padding: 0">
-                        <a href="../parrot.html">
-                            <img src="assets/parrot.png" alt="" class="image3">
-                            <div class="middle">
-                                <h3 class="text">parrot.</h3>
-                                <h6 class="text">RUHacks, 2020</h6>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="proj-container" style = "background-color: black; padding: 0">
-                        <a href="../suit-python.html">
-                            <img src="assets/suit-python.jpg" alt="" class="image3">
-                            <div class="middle">
-                                <h3 class="text">SUIT Toolbox (Python)</h3>
-                                <h6 class="text">Diedrichsen Lab, 2020</h6>
-                            </div>
-                        </a>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -488,17 +464,30 @@
 
     <!-- footer -->
     <section id="footer">
-
-        <footer id="footer" class="footer-area footer-text">
-            <div class="container" data-aos="fade-up" data-aos-duration="1200">
-                <h4 style="font-weight: 600;">Contact Me!</h4>
-                <span>
-                    <a href="mailto:elaineliu7g@gmail.com"><i class="fas fa-envelope"></i></a> &nbsp
-                    <a href="tel:647-761-8125"><i class="fas fa-phone-alt"></i></a> &nbsp
-                    <a href="https://www.linkedin.com/in/eliu72/"><i class="fab fa-linkedin-in"></i></a> &nbsp
-                    <a href="https://github.com/eliu72" ><i class="fab fa-github"></i></a>
-                </span>
-            </div>
+        <footer id="footer" class="footer-area section">
+            <h1 class="section-header text-center">Get in Touch!</h1>
+            <br>
+            <div class="container" data-aos="fade-up" data-aos-duration="1200"> 
+                <div class="card mx-auto">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <a href="mailto:elaineliu7g@gmail.com"><button type="button" class="btn btn-dark"><i class="fas fa-paper-plane"></i></button></a>
+                            <h5 class="footer-text">elaineliu7g@gmail.com</h5>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="https://github.com/eliu72" ><button type="button" class="btn btn-dark"><i class="fa fa-github"></i></button></a>
+                            <h5 class="footer-text my-auto">github.com/eliu72</h5>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="https://www.linkedin.com/in/eliu72/"><button type="button" class="btn btn-dark"><i class="fab fa-linkedin-in"></i></button></a>
+                            <h5 class="footer-text my-auto">linkedin.com/in/eliu72</h5>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="https://www.facebook.com/elaineliu22"><button type="button" class="btn btn-dark"><i class="fab fa-facebook-f"></i></button></a>
+                            <h5 class="footer-text my-auto">facebook.com/elaineliu22</h5>
+                        </li>
+                    </ul>
+                </div>
         </footer>
     </section>
 
