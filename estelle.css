@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+body{
+    background-image: url("../images/estelle-bg.png");
+    background-repeat: repeat;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: "Comic Sans MS";
+    font-weight: 700;
+}
+
+section{
+    height: 100vh;
+}
+
+.vertical-center{
+    display:flex;
+    align-items: center;
+}
+
+.horizontal-center{
+    text-align: center;
+}
+
+.evol{
+    padding: 70px 0px;
+}
+
