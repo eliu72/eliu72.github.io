@@ -256,6 +256,7 @@ body{
     border-radius: 15px;
     width: 43px;
     height: 43px; 
+    color: #3257A8;
 }
 
 #footer button:hover{
@@ -445,7 +446,7 @@ video{
 }
 
 #footer h4{
-    font-weight: 700;
+    font-weight: 600;
     color: white;
     font-family: "Poppins";
 }
