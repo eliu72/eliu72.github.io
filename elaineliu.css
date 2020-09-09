@@ -233,7 +233,7 @@ body{
     color: white;
 }
 
-#hero button, #footer button{
+#hero button{
     background: none;
     border: 1.5px solid #3257A8;
     box-sizing: border-box;
@@ -260,7 +260,8 @@ body{
 
 #footer button:hover{
     background-color: black;
-    color: none;
+    border-color: black;
+    color: white;
 }
 
 #about-me, #resume{
