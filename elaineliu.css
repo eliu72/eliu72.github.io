@@ -425,10 +425,25 @@ video{
 /* footer */
 #footer{
     background-color: #3257A8;
-    color: white;
-    font-family: "Open Sans";
+
     padding-top: 8%;
     padding-bottom: 8%;
+}
+
+#footer h4{
+    font-weight: 700;
+    color: white;
+    font-family: "Poppins";
+}
+
+#footer p, #footer a{
+    color: white;
+    font-family: "Open Sans";
+    font-weight: 400;
+}
+
+#footer a:hover{
+    color: grey;
 }
 
 /* images on project pages */
