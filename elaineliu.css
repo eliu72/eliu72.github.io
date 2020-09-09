@@ -423,20 +423,10 @@ video{
 
 
 /* footer */
-.footer-text{
-    font-family: "Open Sans";
-    font-weight: 600;
-    display: inline-block;
-}
-
-#footer ul, #footer li, .card{
-    background-color: none;
-    background: none;
-    border: none;
-    border-radius: none;
-}
-
 #footer{
+    background-color: #3257A8;
+    color: white;
+    font-family: "Open Sans";
     padding-top: 8%;
     padding-bottom: 8%;
 }
@@ -448,10 +438,11 @@ video{
     border-style: solid;
     border-color: #3257A8;
     width: 100%;
+    transition: .5s ease;
+    background-color: black;
 }
 
 .proj-img:hover{
-    background-color: black;
     opacity: 0.5;
 }
 
