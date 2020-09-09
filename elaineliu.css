@@ -441,8 +441,7 @@ video{
 /* footer */
 #footer{
     background-color: #3257A8;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding: 7%;
 }
 
 #footer h4{
