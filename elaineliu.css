@@ -450,6 +450,11 @@ video{
     width: 100%;
 }
 
+.proj-img:hover{
+    background-color: black;
+    opacity: 0.5;
+}
+
 .proj-page h2{
     font-family: "Poppins";
     font-weight: 700;
