@@ -43,7 +43,7 @@
             <div class = "container">
     
                 <!-- Brand and toggle get grouped for better mobile display -->
-                <a href="index.html" class="navbar-brand"><h2>Elaine Liu</h2></a>
+                <a href="../index.html" class="navbar-brand"><h2>Elaine Liu</h2></a>
                 <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="navbar-toggler-icon"></i>
                 </button>  
@@ -52,36 +52,37 @@
                 <div class="navbar-collapse collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto w-100 clearfix">
                         <li class="nav-item">
-                            <a class="nav-link" href="../index.html#about-me">About Me</a>
+                            <a class="nav-link" href="../../index.html#about-me">About Me</a>
                         </li>
                     
                         <li class="nav-item">
-                            <a class="nav-link" href="../index.html#resume" role="button" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link" href="../../index.html#resume" role="button" aria-haspopup="true" aria-expanded="false">
                                 Experience
                             </a>
                         </li>
     
                         <li class="nav-item">
-                            <a class="nav-link" href="../index.html#resume">Skills</a>
+                            <a class="nav-link" href="../../index.html#resume">Skills</a>
                         </li>
     
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="../index.html#projects" role="button" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="../../index.html#projects" role="button" aria-haspopup="true" aria-expanded="false">
                                 Projects
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="../clairity.html">clAIRity</a>
-                                <a class="dropdown-item" href="../stats-vis.html">Stats Visualizer</a>
-                                <a class="dropdown-item" href="../healthy-heart.html">Healthy Heart</a>
-                                <a class="dropdown-item" href="../vino.html">Vino</a>
-                                <a class="dropdown-item" href="../suitpy.html">SUITPy</a>
-                                <a class="dropdown-item" href="../shehacks.html">SheHacks</a>
-                                <a class="dropdown-item" href="../wits.html">WITS Website</a>
-                                <a class="dropdown-item" href="../parrot.html">parrot.</a>
-                                <a class="dropdown-item" href="../save-spend.html">save-spend</a>
-                                <a class="dropdown-item" href="../cpr-alert.html">CPR Alert</a>
-                                <a class="dropdown-item" href="../aisle-vision.html">Aisle Vision</a>
-                            </div>   
+                                <a class="dropdown-item" href="../projects/fusion.html">Fusion</a>
+                                <a class="dropdown-item" href="../projects/clairity.html">clAIRity</a>
+                                <a class="dropdown-item" href="../projects/stats-vis.html">Stats Visualizer</a>
+                                <a class="dropdown-item" href="../projects/healthy-heart.html">Healthy Heart</a>
+                                <a class="dropdown-item" href="../projects/vino.html">Vino</a>
+                                <a class="dropdown-item" href="../projects/suitpy.html">SUITPy</a>
+                                <a class="dropdown-item" href="../projects/shehacks.html">SheHacks</a>
+                                <a class="dropdown-item" href="../projects/wits.html">WITS Website</a>
+                                <a class="dropdown-item" href="../projects/parrot.html">parrot.</a>
+                                <a class="dropdown-item" href="../projects/save-spend.html">save-spend</a>
+                                <a class="dropdown-item" href="../projects/cpr-alert.html">CPR Alert</a>
+                                <a class="dropdown-item" href="../projects/aisle-vision.html">Aisle Vision</a>
+                            </div>  
                         </li>
 
                         <li class="nav-item">
@@ -101,21 +102,20 @@
         <div class="container" style="padding-top:100px">
             <div class="row">
                 <div class="col-lg-6 col-xs-12" data-aos="fade-up" data-aos-duration="1000" style="padding-top: 20px; padding-left: 20px; padding-right: 20px;">
-                    <a href="https://github.com/eliu72/delta-hacks-2021/" target="_blank"><img src="../assets/healthy-heart.png" alt="" class="proj-img"></a>
+                    <a href="https://github.com/eliu72/disability-assist-app" target="_blank"><img src="../assets/clairity.png" alt="" class="proj-img"></a>
                 </div>
                 <div class="col-lg-6 col-xs-12" data-aos="fade-up" data-aos-duration="1500" style="padding: 20px;">
-                    <h2 style="padding-top: 20px; padding-bottom: 10px;">Healthy Heart</h2>
+                    <h2 style="padding-top: 20px; padding-bottom: 10px;">clAIRity</h2>
                     <p>
-                        <b>Contributers: </b>Elaine Liu<br>
-                        <b>My Role: </b>Full-stack Developer, Designer
+                        <b>Contributers: </b>Elaine Liu, Faith Chua, Kenny Tran<br>
+                        <b>My Role: </b>Full-stack developer
                     </p>
                     <p>
-                        High blood pressure is the #1 risk factor for stroke and a major risk factor for heart disease. 
-                        It is such a common health concern and there are many resources online that provide information about high blood pressure but for seniors, they may not be easily accessbile. 
-                        That's why I built Healthy heart - a simple and informative web application to help seniors understand their blood pressure.
-                        Healthy heart is built using Python Flask and uses the OpenCV library to livestream the photo footage and capture an image. 
-                        A request is sent to the Google Cloud Vision API which detects the text in the image and interprets it as the user’s blood pressure. 
-                        The results are returned to the application and depending on the user’s blood pressure, it displays the appropriate advice and provides them with more resources and way to help control and maintain a healthy blood pressure.
+                        clAIRity is an app that helps the visually impaired navigate airports. The app provide audio descriptions and directions to help the visually impaired navigate to their airport destinations.
+                        A custom API was built to support path-finding from the user's current geolocation to the final desination. 
+                        The API uses Dijkstra's algorithm on a graph representation of the airport map to find the shortest path. <br><br>
+                        Check out the web app here: <a href="https://disability-assist-app.herokuapp.com/">disability-assist-app.herokuapp.com</a><br>
+                        Learn more about the api here: <a href="https://github.com/eliu72/disability-assist">github.com/eliu72/disability-assist</a>
                     </p>
                 </div>
             </div>
@@ -133,10 +133,10 @@
                     </div>
                     <div class="row" data-aos="fade-up" data-aos-duration="700">
                         <p>
-                            Python-Flask<br>
-                            OpenCV<br>
-                            Google Cloud Vision API<br>
-                            HTML/CSS<br><br><br>
+                            Python Flask<br>
+                            JavaScript<br>
+                            HTML/CSS<br>
+                            W3C Geolocation API<br><br><br>
                         </p>
                     </div>
                 </div>
@@ -149,15 +149,19 @@
                         </p> 
                     </div>
                     <div class="row">
-                        <div class="col-6 col-sm-6 col-md-4 col-lg-4">
-                            <img src="../assets/healthy-heart-1.png" style="width:100%; border-radius: 10px; margin-bottom:15%" data-aos="fade-up" data-aos-duration="700" alt="">
+
+                        <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+                            <img src="../assets/clairity-1.png" style="width:100%; border-radius: 10px; margin-bottom:15%;" data-aos="fade-up" data-aos-duration="700" alt="">
                         </div>
-                        <div class="col-6 col-sm-6 col-md-4 col-lg-4">
-                            <img src="../assets/healthy-heart-2.png" style="width:100%; border-radius: 10px; margin-bottom:15%;" data-aos="fade-up" data-aos-duration="700" alt="">
+                        <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+                            <img src="../assets/clairity-2.png" style="width:100%; border-radius: 10px; margin-bottom:15%;" data-aos="fade-up" data-aos-duration="1200" alt="">
                         </div>
-                        <div class="col-6 col-sm-6 col-md-4 col-lg-4">
-                            <img src="../assets/healthy-heart-3.png" style="width:100%; border-radius: 10px; margin-bottom:15%;" data-aos="fade-up" data-aos-duration="1200" alt="">
-                        </div>
+                        <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+                            <img src="../assets/clairity-4.png" style="width:100%; border-radius: 10px; margin-bottom:15%;" data-aos="fade-up" data-aos-duration="1200" alt="">
+                        </div> 
+                        <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+                            <img src="../assets/clairity-3.png" style="width:100%; border-radius: 10px; margin-bottom:15%;" data-aos="fade-up" data-aos-duration="1200" alt="">
+                        </div> 
                     </div>
 
                 </div>
@@ -171,9 +175,13 @@
                         </p> 
                     </div>
                     <div class="row">
-                        <iframe width="100%" height="400vw"
-                        src="https://youtube.com/embed/HLgryGrkrhM">
-                        </iframe>                    
+                        <div class="col-5 col-sm-5 col-md-3 col-lg-4">
+                            <img src="../assets/clairity-gif.gif" style="width:100%; border-radius: 10px; margin-bottom:15%" data-aos="fade-up" data-aos-duration="700" alt="">
+                        </div>
+                        <div class="col-7 col-sm-7 col-md-9 col-lg-8">
+                            <video controls width="100%" muted> <source src="../assets/clairity-demo.mp4"  type="video/mp4"> </video>
+                        </div>
+
                     </div>
                 </div>
 
@@ -204,17 +212,18 @@
                             PROJECTS
                         </h4>
                         <p>
-                            <a href="../clairity.html">clAIRity</a><br>
-                            <a href="../stats-vis.html">Stats Visualizer</a><br>
-                            <a href="../healthy-heart.html">Healthy Heart</a><br>
-                            <a href="../vino.html">Vino</a><br>
-                            <a href="../suitpy.html">SUITPy</a><br>
-                            <a href="../shehacks.html">SheHacks</a><br>
-                            <a href="../wits.html">WITS Website</a><br>
-                            <a href="../parrot.html">parrot</a><br>
-                            <a href="../save-spend.html">save-spend</a><br>
-                            <a href="../cpr-alert.html">CPR Alert</a><br>
-                            <a href="../aisle-vision.html">Aisle Vision</a>
+                            <a href="../projects/fusion.html">Fusion</a><br>
+                            <a href="../projects/clairity.html">clAIRity</a><br>
+                            <a href="../projects/stats-vis.html">Stats Visualizer</a><br>
+                            <a href="../projects/healthy-heart.html">Healthy Heart</a><br>
+                            <a href="../projects/vino.html">Vino</a><br>
+                            <a href="../projects/suitpy.html">SUITPy</a><br>
+                            <a href="../projects/shehacks.html">SheHacks</a><br>
+                            <a href="../projects/wits.html">WITS Website</a><br>
+                            <a href="../projects/parrot.html">parrot</a><br>
+                            <a href="../projects/save-spend.html">save-spend</a><br>
+                            <a href="../projects/cpr-alert.html">CPR Alert</a><br>
+                            <a href="../projects/aisle-vision.html">Aisle Vision</a>
                         </p>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12 col-12">
